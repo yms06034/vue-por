@@ -1,0 +1,21 @@
+@import "../../node_modules/bootstrap-scss/functions";
+@import "../../node_modules/bootstrap-scss/variables";
+@import "../../node_modules/bootstrap-scss/mixins";
+@import "../../node_modules/bootstrap-scss/bootstrap.scss";
+
+$primary: #69b3a2;
+
+a {
+  color: #000;
+  text-decoration: none;
+  &:link, :visited, :hover, :active {
+    text-decoration: none;
+  }
+}
+
+.primary {
+  color: $primary;
+}
+.weight {
+  font-weight: bold;
+}
