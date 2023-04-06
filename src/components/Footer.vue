@@ -1,24 +1,40 @@
 <template>
   <footer>
-    <ul class="footer__link-list">
-      <li class="footer__link-list-item">
-        개인정보처리방침
-      </li>
-      <li class="footer__link-list-divider"></li>
-      <li class="footer__link-list-item">
-        이용약관
-      </li>
-      <li class="footer__link-list-divider"></li>
-      <li class="footer__link-list-item">
-        청소년 보호정책
-      </li>
-    </ul>
-    <p>010-0000-0000 | yms06034@gmail.com</p>
-    <a 
-      href="/"
-      target="_self">
-      (c) {{ new Date().getFullYear() }} FIRSTSTEP. All Rights Reserved.
-    </a>
+    <div class="footer">
+      <p class="text">
+        Made By © SungJIn {{ new Date().getFullYear() }}
+      </p>
+      <div class="contact_area">
+        <a
+          class="img_a"
+          href="https://github.com/yms06034">
+          <img
+            src="https://aib15-ksj.cf/github.2c59b925.png"
+            alt="github" />
+        </a>
+        <a
+          class="img_a"
+          href="https://www.linkedin.com/in/sungjin-kim-7229ba259/">
+          <img
+            src="https://aib15-ksj.cf/linkedin.3aef5102.png"
+            alt="github" />
+        </a>
+        <a
+          class="img_a"
+          href="">
+          <img
+            src="https://aib15-ksj.cf/notion.4740dbd3.png"
+            alt="github" />
+        </a>
+        <a
+          class="img_a"
+          href="mailto:yms06034@gmail.com">
+          <img
+            src="https://aib15-ksj.cf/mail.d362bdff.png"
+            alt="github" />
+        </a>
+      </div>
+    </div>
   </footer>
 </template>
 
@@ -32,39 +48,43 @@ export default {
 @import "~/scss/main";
 
   footer {
+    font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     padding: 30px 0;
     font-size: 15px;
     background-color: #262626;
-    color: #666666;
     text-decoration: none;
     text-align: center;
     margin-top: 100px;
-    a {
-      color: #666666;
-      margin: auto;
-    }
-    p {
-      margin-bottom:10px;
-      padding-top: 20px;
-      border-top: 1px solid #828282;
-    }
-    .footer__link-list {
-      display:flex;
-      grid-row-gap: 1.6rem;
+    .footer {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
       align-items: center;
-      justify-content: center;
-      li {
-        display: flex;
-        align-content: center;
+      max-width: 1000px;
+      margin: 0 auto;
+      .text {
+        color: #fff;
+        margin: 0 !important;
       }
-      .footer__link-list-divider {
-        margin: 0 1.2rem;
-        &::before {
-          content: "";
-          display: block;
-          width: 0.1rem;
-          height: 1.2rem;
-          background-color: #666666;
+      .contact_area {
+        .img_a {
+          width: 40px;
+          height: auto;
+          display: inline-block;
+          margin-right: 15px;
+          opacity: .6;
+          transition: all .3s;
+          &:hover {
+            opacity: 1;
+            transition: all .3s;
+          }
+          &:last-child {
+            margin-right: 0;
+          }
+          img {
+            width: 100%;
+            height: auto;
+          }
         }
       }
     }

@@ -1,6 +1,8 @@
 <template>
   <header>
-    <div id="top-navbar--wrap">
+    <div
+      id="top-navbar--wrap"
+      class="top-navbar">
       <div>
         <a
           class="aa pad-15 weight primary"
@@ -39,9 +41,9 @@ export default {
           name: 'CONTACT',
           href: '#'
         }
-      ]
-    }
-  }
+      ],
+    };
+  },
 }
 </script>
 
@@ -65,9 +67,8 @@ $primary: #69b3a2;
   padding: 15px;
 }
 
-
-header{ 
-  #top-navbar--wrap {
+header { 
+  .top-navbar {
     margin: 0 auto;
     max-width: 1140px;
     padding-top: 35px;
@@ -83,6 +84,7 @@ header{
     .navber_right {
       display: flex;
       flex-direction: row;
+      font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
       a {
         &:hover {
           color: $primary;
