@@ -183,8 +183,7 @@
             <br /> Data에 대한 이해와 왜 DataDriven이 시장에서 각광을 받는지에 대해 배우게 되었습니다.
           </p>
           <p>
-            Data에 대한 이해와 왜 DataDriven이 시장에서 각광을 받는지에 대해 배우게 되었습니다.
-            <br /> 저는 Data에 대해 자연스럽게 호기심이 생기며 Data Enigneer을 위해 끊임없이 노력하고 있습니다.
+            저는 Data에 대해 자연스럽게 호기심이 생기며 Data Enigneer을 위해 끊임없이 노력하고 있습니다.
           </p>
           <div class="btn_area">
             <a
@@ -339,6 +338,14 @@
           <p class="sub_text">
             항상 이런 마음가짐으로 모든일에 최선을 다합니다.
           </p>
+          <p class="sub_mail">
+            email at   
+            <a
+              class="mail"
+              href="mailto:yms06034@gmail.com">
+              yms06034@gmail.com.
+            </a>
+          </p>
         </div>
         <div class="btn_area">
           <a
@@ -473,6 +480,7 @@ export default {
 <style lang="scss" scoped>
 $primary: #69b3a2;
 $font : 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$font2: 'Roboto Slab', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 
   .particles {
     position: relative;
@@ -770,6 +778,18 @@ $font : 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
         padding: 0 20px;
         .sub_text {
           margin-top: 10px;
+        }
+        .sub_mail {
+          font-weight: 500;
+          font-family: $font2;
+          .mail {
+            color: $primary;
+            font-weight: 500;
+            &:hover {
+              color: #072645;
+              font-weight: bold;
+            }
+          }
         }
       }
       .btn_area {

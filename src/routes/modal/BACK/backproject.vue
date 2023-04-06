@@ -11,10 +11,10 @@
           <div class="page-title">
             <img
               class="back_img"
-              src="../../assets/data_engineer.png"
+              src="../../../assets/backend.png"
               alt="backendimg" />
             <p class="title">
-              Data Enigneer
+              BackEnd Developer
             </p>
           </div>
           <hr style="width: 50%; border-top:1px solid rgba(0, 0, 0, .2);" />
@@ -25,19 +25,30 @@
               </p>
               <div class="content">
                 <p>Python</p>
-                <p>Scala</p>
+                <p>javascript</p>
               </div>
             </div>
             <div class="text_area">
               <p class="title">
-                Data engineer
+                FrontEnd Development
               </p>
               <div class="content">
+                <p>HTML</p>
+                <p>CSS</p>
+                <p>SASS</p>
+                <p>BOOTSTRAP</p>
+                <p>VUE.JS</p>
+              </div>
+            </div>
+            <div class="text_area">
+              <p class="title">
+                Backend Development
+              </p>
+              <div class="content">
+                <p>Django</p>
+                <p>Flask</p>
+                <p>Heroku</p>
                 <p>AWS</p>
-                <p>Spark</p>
-                <p>Hadoop</p>
-                <p>Airflow</p>
-                <p>Selenium</p>
               </div>
             </div>
             <div class="text_area">
@@ -46,21 +57,8 @@
               </p>
               <div class="content">
                 <p>mongoDB</p>
-                <p>Cassandra</p>
                 <p>MySql</p>
                 <p>Postgresql</p>
-              </div>
-            </div>
-            <div class="text_area">
-              <p class="title">
-                Other Tools
-              </p>
-              <div class="content">
-                <p>Docker</p>
-                <p>Docker Compose</p>
-                <p>Linux</p>
-                <p>Zeppelin</p>
-                <p>jupyter notebook</p>
               </div>
             </div>
           </div>
@@ -176,7 +174,6 @@ $font : 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
             color: $primary;
             margin-top: 10px;
             margin-bottom: 10px;
-            text-align: center;
           }
           .content {
             text-align: center;
