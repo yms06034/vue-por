@@ -122,7 +122,7 @@ $font : 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     position: fixed;
     width: 520px;
     height: 700px;
-    margin: -345px auto 0px -260px;
+    transform: translate(-50%, -50%);
     top: 50%;
     left: 50%;
     z-index: 2010;
