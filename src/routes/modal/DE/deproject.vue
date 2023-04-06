@@ -14,7 +14,7 @@
               src="../../../assets/backend.png"
               alt="backendimg" />
             <p class="title">
-              BackEnd Developer
+              DE PROJECT
             </p>
           </div>
           <hr style="width: 50%; border-top:1px solid rgba(0, 0, 0, .2);" />

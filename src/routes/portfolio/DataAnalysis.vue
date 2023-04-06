@@ -1,6 +1,6 @@
 <template>
   <p class="top_title">
-    Data Analysis
+    Show All
   </p>
   <div class="container">
     <div class="content">
@@ -12,116 +12,14 @@
             alt="project" />
           <div class="text_box">
             <a
-              href="/" 
+              @click="openDaModal" 
               class="sub_text">
-              프레이저 밸리(Fraser Valley) 주택 소유자에게 서비스를 제공하는 고급 맞춤형 주거용 리노베이터입니다.
+              DATA ANALYSIS PROJECT
             </a>
           </div>
-        </figure>
-      </div>
-      <div class="item">
-        <figure class="img_area">
-          <img
-            class="img_img"
-            src="https://www.yan-holtz.com/img/portfolio/GenMapComp.png"
-            alt="project" />
-          <div class="text_box">
-            <a
-              href="/" 
-              class="sub_text">
-              프레이저 밸리(Fraser Valley) 주택 소유자에게 서비스를 제공하는 고급 맞춤형 주거용 리노베이터입니다.
-            </a>
-          </div>
-        </figure>
-      </div>
-      <div class="item">
-        <figure class="img_area">
-          <img
-            class="img_img"
-            src="https://www.yan-holtz.com/img/portfolio/GenMapComp.png"
-            alt="project" />
-          <div class="text_box">
-            <a
-              href="/" 
-              class="sub_text">
-              프레이저 밸리(Fraser Valley) 주택 소유자에게 서비스를 제공하는 고급 맞춤형 주거용 리노베이터입니다.
-            </a>
-          </div>
-        </figure>
-      </div>
-      <div class="item">
-        <figure class="img_area">
-          <img
-            class="img_img"
-            src="https://www.yan-holtz.com/img/portfolio/GenMapComp.png"
-            alt="project" />
-          <div class="text_box">
-            <a
-              href="/" 
-              class="sub_text">
-              프레이저 밸리(Fraser Valley) 주택 소유자에게 서비스를 제공하는 고급 맞춤형 주거용 리노베이터입니다.
-            </a>
-          </div>
-        </figure>
-      </div>
-      <div class="item">
-        <figure class="img_area">
-          <img
-            class="img_img"
-            src="https://www.yan-holtz.com/img/portfolio/GenMapComp.png"
-            alt="project" />
-          <div class="text_box">
-            <a
-              href="/" 
-              class="sub_text">
-              프레이저 밸리(Fraser Valley) 주택 소유자에게 서비스를 제공하는 고급 맞춤형 주거용 리노베이터입니다.
-            </a>
-          </div>
-        </figure>
-      </div>
-      <div class="item">
-        <figure class="img_area">
-          <img
-            class="img_img"
-            src="https://www.yan-holtz.com/img/portfolio/GenMapComp.png"
-            alt="project" />
-          <div class="text_box">
-            <a
-              href="/" 
-              class="sub_text">
-              프레이저 밸리(Fraser Valley) 주택 소유자에게 서비스를 제공하는 고급 맞춤형 주거용 리노베이터입니다.
-            </a>
-          </div>
-        </figure>
-      </div>
-      <div class="item">
-        <figure class="img_area">
-          <img
-            class="img_img"
-            src="https://www.yan-holtz.com/img/portfolio/GenMapComp.png"
-            alt="project" />
-          <div class="text_box">
-            <a
-              href="/" 
-              class="sub_text">
-              프레이저 밸리(Fraser Valley) 주택 소유자에게 서비스를 제공하는 고급 맞춤형 주거용 리노베이터입니다.
-            </a>
-          </div>
-        </figure>
-      </div>
-      <div class="item">
-        <figure class="img_area">
-          <img
-            class="img_img"
-            src="https://www.yan-holtz.com/img/portfolio/GenMapComp.png"
-            alt="project" />
-          <div class="text_box">
-            <a
-              href="/" 
-              class="sub_text">
-              프레이저 밸리(Fraser Valley) 주택 소유자에게 서비스를 제공하는 고급 맞춤형 주거용 리노베이터입니다.
-            </a>
-          </div>
+          <Daproject 
+            @click="closeDaModal"
+            v-if="damodal" />
         </figure>
       </div>
     </div>
@@ -129,14 +27,32 @@
 </template>
 
 <script>
+import Daproject from "../modal/DA/daproject";
+
 export default {
-  
+  components: {
+    Daproject,
+  },
+  data() {
+    return {
+      damodal: false,
+    }
+  },
+  methods: {
+    openDaModal() {
+      this.damodal = true;
+    },
+    closeDaModal() {
+      this.damodal = false;
+    },
+    }
 }
 </script>
 
 <style lang="scss" scoped>
 $primary: #69b3a2;
 $font : 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
   .top_title {
     font-size: 24px;
     text-align: center;
@@ -184,6 +100,9 @@ $font : 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
               font-size: 16px;
               font-family: verdana,sans-serif;
               text-align: center;
+              text-decoration: none;
+              cursor: pointer;
+              user-select: none;
             }
           }
         }
