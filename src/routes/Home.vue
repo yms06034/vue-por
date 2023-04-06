@@ -1,4 +1,23 @@
 <template>
+  <header>
+    <div
+      id="top-navbar--wrap"
+      class="top-navbar">
+      <div>
+        <a
+          class="aa pad-15 weight primary"
+          href="/">HOME</a>
+      </div>
+      <div class="navber_right">
+        <div class="pad-15">
+          <a @click="scrollVisit()">INFO</a>
+          <a @click="scrollpor()">PORTFOLIO</a>
+          <a @click="scrollcontact()">CONTACT</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
   <div class="particles"> 
     <Particles
       id="tsparticles"
@@ -326,7 +345,9 @@
       </div>
     </div>
   </section>
-  <section class="content_section">
+  <section 
+    ref="contact"
+    class="content_section">
     <div class="container">
       <div class="content">
         <div class="title">
@@ -394,6 +415,20 @@ export default {
   },
   data() {
     return {
+      navigations : [
+        {
+          name: 'INFO',
+          href: '',
+        },
+        {
+          name: 'PORTFOLIO',
+          href: ''
+        },
+        {
+          name: 'CONTACT',
+          href: ''
+        }
+      ],
       stage: 1,
       showModal: false,
       modal: false,
@@ -413,9 +448,9 @@ export default {
       const _this = this;
       _this.$refs.portfolio.scrollIntoView({ behavior: "smooth" });
     },
-    scrolltach() {
+    scrollcontact() {
       const _this = this;
-      _this.$refs.techstack.scrollIntoView({ behavior: "smooth" });
+      _this.$refs.contact.scrollIntoView({ behavior: "smooth" });
     },
     openModal() {
       this.modal = true;
@@ -481,6 +516,39 @@ export default {
 $primary: #69b3a2;
 $font : 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 $font2: 'Roboto Slab', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+header { 
+  .top-navbar {
+    margin: 0 auto;
+    max-width: 1140px;
+    padding-top: 35px;
+    padding-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    .aa {
+      font-size: 18px;
+     &:hover {
+        color: #251667; 
+    }
+      }
+    .navber_right {
+      display: flex;
+      flex-direction: row;
+      font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      a {
+        cursor: pointer;
+        margin-right: 25px;
+        &:hover {
+          color: $primary;
+          border-bottom: 3px solid $primary;
+        }
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+}
 
   .particles {
     position: relative;
