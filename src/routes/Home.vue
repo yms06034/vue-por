@@ -166,7 +166,8 @@
   <section
     v-if="stage === 1"
     class="visit_section"
-    ref="visit">
+    ref="visit"
+    id="visit">
     <div class="container">
       <div class="content_row">
         <div class="img_area">
@@ -187,12 +188,14 @@
           </p>
           <div class="btn_area">
             <a
+              class="bb-bbtn"
+              href="javascript:void(0)">RESUME</a>
+            <a
               class="bbtn"
               href="https://github.com/yms06034">GITHUB</a>
             <a
               class="bbtn"
               href="mailto:yms06034@gmail.com">MAIL</a>
-            <a href=""></a>
           </div>
         </div>
       </div>
@@ -209,7 +212,6 @@
           TECH STACK
         </p>
         <hr style="width: 100px; height: 1px; border:none;color:#333;background-color:#333;" />
-        <center />
         <p class="summary">
           The technology used by the previous company and the technology stack and currently studying.
         </p>
@@ -229,14 +231,19 @@
             can be interpreted by data scientists and 
             business analysts.
           </p>
-          <a class="modal_data">
+          <a
+            @click="ddopenModal" 
+            class="modal_data">
             +
           </a>
+          <BackModal
+            @close="ddcloseModal"
+            v-if="data_modal" />
         </div>
         <div class="tents_p">
           <img
             class="tents_img"
-            src="~assets/data_engineer.png"
+            src="~assets/backend.png"
             alt="data_engineer" />
           <p class="title">
             BackEnd Developer
@@ -246,20 +253,107 @@
             an application to communicate with
             writing APIs, creating libraries, and working with system components
           </p>
-          <a class="modal_data">
+          <a 
+            class="modal_data"
+            id="data_show-modal"
+            @click="openModal">
             +
           </a>
+          <Modal
+            @close="closeModal"
+            v-if="modal" />
         </div>
       </div>
     </div>
   </section>
   <!-- PORTFOLIO AREA -->
   <section
+    class="por_section"
     v-if="stage === 1"
     ref="portfolio">
-    PORTFOLIO
+    <div class="container">
+      <div class="content">
+        <p class="title">
+          PORTFOLIO
+        </p>
+        <hr style="width: 100px; height: 1px; border:none;color:#333;background-color:#333;" />
+        <p class="summary">
+          It's the projects I've been worked on.
+        </p>
+      </div>
+      <div class="content_row">
+        <div class="all_btn">
+          <button
+            class="btn_b activate"
+            ref="showAll" 
+            href="javascript:void(0)"
+            @click="openShowAll">
+            Show All
+          </button>
+          <button
+            class="btn_b"
+            ref="DataEngineer" 
+            href="javascript:void(0)"
+            @click="openEng">
+            Data Engineer
+          </button>
+          <button
+            class="btn_b"
+            ref="DataAnalysis" 
+            href="javascript:void(0)"
+            @click="openAna">
+            Data Analysis
+          </button>
+          <button
+            class="btn_b"
+            ref="Backend" 
+            href="javascript:void(0)"
+            @click="openBack">
+            Backend
+          </button>
+        </div>
+        <porShowAll v-if="ShowAll">
+          openShow
+        </porShowAll>
+        <porDataEngineer v-if="DataEngineer">
+          openEng
+        </porDataEngineer>
+        <porDataAnalysis v-if="DataAnalysis">
+          openAna
+        </porDataAnalysis>
+        <porBackend v-if="Backend">
+          openBack
+        </porBackend>
+      </div>
+    </div>
   </section>
-  <div style="height:1000px"></div>
+  <section class="content_section">
+    <div class="container">
+      <div class="content">
+        <div class="title">
+          CONTACT
+        </div>
+        <div class="summary">
+          "우리는 모두 이 사실을 알고 있다.
+          계속 노력하면 성공할 수 있다는 걸 그 속도가 느릴지언정 <strong>‘절대’</strong> 포기하지 말라 목표는 보이는 것보다 가까이 있을 때가 있다.”
+          <p class="sub_text">
+            항상 이런 마음가짐으로 모든일에 최선을 다합니다.
+          </p>
+        </div>
+        <div class="btn_area">
+          <a
+            class="bb-bbtn"
+            href="javascript:void(0)">RESUME</a>
+          <a
+            class="bbtn"
+            href="https://github.com/yms06034">GITHUB</a>
+          <a
+            class="bbtn"
+            href="mailto:yms06034@gmail.com">MAIL</a>
+        </div>
+      </div>
+    </div>
+  </section>
 </template>
 
 <script setup>
@@ -276,10 +370,31 @@ console.log(particlesLoaded);
 </script>
 
 <script>
+import BackModal from "../components/Modal/DataEngineer";
+import Modal from "../components/Modal/Backend";
+
+import porShowAll from "./portfolio/ShowAll";
+import porDataEngineer from "./portfolio/DataEngineer";
+import porDataAnalysis from "./portfolio/DataAnalysis";
+import porBackend from "./portfolio/Backenddev";
+
 export default {
+  components: {
+    porShowAll,
+    porDataEngineer,
+    porDataAnalysis,
+    porBackend
+  },
   data() {
     return {
-      stage: 1
+      stage: 1,
+      showModal: false,
+      modal: false,
+      data_modal: false,
+      ShowAll: true,
+      DataEngineer: false,
+      DataAnalysis: false,
+      Backend: false,
     };
   },
   methods: {
@@ -294,6 +409,62 @@ export default {
     scrolltach() {
       const _this = this;
       _this.$refs.techstack.scrollIntoView({ behavior: "smooth" });
+    },
+    openModal() {
+      this.modal = true;
+    },
+    closeModal() {
+      this.modal = false;
+    },
+    ddopenModal() {
+      this.data_modal = true;
+    },
+    ddcloseModal() {
+      this.data_modal = false;
+    },
+    openShowAll() {
+      this.$refs.showAll.classList.add('activate');
+      this.$refs.DataEngineer.classList.remove('activate');
+      this.$refs.DataAnalysis.classList.remove('activate');
+      this.$refs.Backend.classList.remove('activate');
+
+      this.ShowAll = true;
+      this.DataEngineer = false;
+      this.DataAnalysis = false;
+      this.Backend = false;
+    },
+    openEng() {
+      this.$refs.showAll.classList.remove('activate');
+      this.$refs.DataEngineer.classList.add('activate');
+      this.$refs.DataAnalysis.classList.remove('activate');
+      this.$refs.Backend.classList.remove('activate');
+
+      this.ShowAll = false;
+      this.DataEngineer = true;
+      this.DataAnalysis = false;
+      this.Backend = false;
+    },
+    openAna() {
+      this.$refs.showAll.classList.remove('activate');
+      this.$refs.DataEngineer.classList.remove('activate');
+      this.$refs.DataAnalysis.classList.add('activate');
+      this.$refs.Backend.classList.remove('activate');
+      
+      this.ShowAll = false;
+      this.DataEngineer = false;
+      this.DataAnalysis = true;
+      this.Backend = false;
+    },
+    openBack() {
+      this.$refs.showAll.classList.remove('activate');
+      this.$refs.DataEngineer.classList.remove('activate');
+      this.$refs.DataAnalysis.classList.remove('activate');
+      this.$refs.Backend.classList.add('activate');
+      
+      this.ShowAll = false;
+      this.DataEngineer = false;
+      this.DataAnalysis = false;
+      this.Backend = true;
     },
   }
 }
@@ -376,7 +547,7 @@ $font : 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
       .scroll_a {
         cursor: pointer;
         border: 2px solid $primary;
-        padding: 16px 36px;
+        padding: 16px 30px;
         text-align: center;
         white-space: nowrap;
         vertical-align: middle;
@@ -435,6 +606,20 @@ $font : 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
         .btn_area {
           font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
           padding-top: 10px;
+          .bb-bbtn {
+            padding: 7px 13px;
+            border: 1px solid $primary;
+            border-radius: 5px;
+            transition: all .2s;
+            background: $primary;
+            margin-right: 15px;
+            color: #fff;
+            &:hover {
+              color: $primary;
+              background: #fff;
+              transition: all .2s;
+            }
+          }
           .bbtn {
             padding: 7px 13px;
             border: 1px solid $primary;
@@ -497,10 +682,128 @@ $font : 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
           font-size: 24px;
         }
         .modal_data {
-          font-size: 25px;
+          font-size: 30px;
           text-decoration: none;
           color: $primary;
           cursor: pointer;
+          transition: all .2s;
+          &:hover {
+            color: #1e7a65;
+            transition: all .2s;
+          }
+        }
+      }
+    }
+  }
+}
+
+.por_section {
+  padding: 150px 0;
+  background: #f8f9fa;
+  .container {
+    text-align: center;
+    max-width: 1140px;
+    padding-right: 15px;
+    padding-left: 15px;
+    .content {
+      .title {
+        font-size: 35px;
+        font-weight: 500;
+      }
+      .summary {
+        color: #6c757d;
+        font-family: $font;
+      }
+    }
+    .content_row {
+      font-family: $font;
+      .all_btn {
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+        margin-bottom: 60px;
+        .btn_b {
+          border-radius: 5px;
+          background: #fff;
+          border: 2px solid $primary;
+          color: $primary;
+          padding: 10px 20px;
+          transition: all .3s;
+          margin-right: 15px;
+          &:hover {
+            transition: all .3s;
+            background: $primary;
+            color: #fff;
+          }
+          &:last-child {
+            margin-right: 0;
+          }
+        }
+        .activate {
+          background: $primary;
+          color: #fff;
+        }
+      }
+    }
+  }
+}
+
+.content_section {
+  padding: 150px 0;
+  .container {
+    text-align: center;
+    max-width: 1140px;
+    padding-right: 15px;
+    padding-left: 15px;
+    .content {
+      .title {
+        font-size: 40px;
+        font-weight: 500;
+        font-family: $font;
+        margin-bottom: 20px;
+      }
+      .summary {
+        margin: 0 auto;
+        color: #464748;
+        font-family: $font;
+        max-width: 800px;
+        padding: 0 20px;
+        .sub_text {
+          margin-top: 10px;
+        }
+      }
+      .btn_area {
+        margin-top: 50px;
+        font-family: $font;
+        .bb-bbtn {
+          padding: 16px 30px;
+          border: 2px solid $primary;
+          border-radius: 5px;
+          transition: all .2s;
+          background: $primary;
+          margin-right: 15px;
+          color: #fff;
+          &:hover {
+            color: $primary;
+            background: #fff;
+            transition: all .2s;
+          }
+        }
+        .bbtn {
+          padding: 16px 30px;
+          border: 2px solid $primary;
+          border-radius: 5px;
+          transition: all .2s;
+          margin-right: 15px;
+          color: $primary;
+          &:hover {
+            color: #fff;
+            background: $primary;
+            transition: all .2s;
+          }
+          &:last-child {
+            margin-right: 0;
+          }
         }
       }
     }

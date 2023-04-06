@@ -30,16 +30,16 @@ export default {
     return {
       navigations : [
         {
-          name: 'INTRO',
-          href: '#',
+          name: 'INFO',
+          href: '',
         },
         {
           name: 'PORTFOLIO',
-          href: '#'
+          href: ''
         },
         {
           name: 'CONTACT',
-          href: '#'
+          href: ''
         }
       ],
     };
