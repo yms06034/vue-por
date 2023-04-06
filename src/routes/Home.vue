@@ -355,7 +355,7 @@
         </div>
         <div class="summary">
           "우리는 모두 이 사실을 알고 있다.
-          계속 노력하면 성공할 수 있다는 걸 그 속도가 느릴지언정 <strong>‘절대’</strong> 포기하지 말라 목표는 보이는 것보다 가까이 있을 때가 있다.”
+          계속 노력하면 성공할 수 있다는 걸 그 속도가 느릴지언정 <strong style="color:#ff8100;">'절대'</strong> 포기하지 말라, 목표는 보이는 것보다 가까이 있을 때가 있다.”
           <p class="sub_text">
             항상 이런 마음가짐으로 모든일에 최선을 다합니다.
           </p>
@@ -843,7 +843,7 @@ header {
         color: #464748;
         font-family: $font;
         max-width: 800px;
-        padding: 0 20px;
+        padding: 0 70px;
         .sub_text {
           margin-top: 10px;
         }

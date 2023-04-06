@@ -5,71 +5,28 @@
     <div
       class="modalto modal-overlay"
       @click.self="$emit('close')">
-      <div class="margin_modal">
-        <div class="modal_window">
-          <div class="modal_content">
-            <!-- <slot /> <= SignUP.vue에서 내용 불러올 때 사용 -->
-            <div class="page-title">
-              <img
-                class="back_img"
-                src="../../../assets/backend.png"
-                alt="backendimg" />
-              <p class="title">
-                BACKEND PROJECT
-              </p>
-            </div>
-            <hr style="width: 50%; border-top:1px solid rgba(0, 0, 0, .2);" />
-            <div class="page_content">
-              <div class="text_area">
-                <p class="title">
-                  Languages I Speak
-                </p>
-                <div class="content">
-                  <p>Python</p>
-                  <p>javascript</p>
-                </div>
-              </div>
-              <div class="text_area">
-                <p class="title">
-                  FrontEnd Development
-                </p>
-                <div class="content">
-                  <p>HTML</p>
-                  <p>CSS</p>
-                  <p>SASS</p>
-                  <p>BOOTSTRAP</p>
-                  <p>VUE.JS</p>
-                </div>
-              </div>
-              <div class="text_area">
-                <p class="title">
-                  Backend Development
-                </p>
-                <div class="content">
-                  <p>Django</p>
-                  <p>Flask</p>
-                  <p>Heroku</p>
-                  <p>AWS</p>
-                </div>
-              </div>
-              <div class="text_area">
-                <p class="title">
-                  Database
-                </p>
-                <div class="content">
-                  <p>mongoDB</p>
-                  <p>MySql</p>
-                  <p>Postgresql</p>
-                </div>
-              </div>
-            </div>
-            <div class="page_close-btn">
-              <button
-                class="close_btn"
-                @click="$emit('close')">
-                CLOSE
-              </button>
-            </div>
+      <div class="modal_window">
+        <div class="modal_content">
+          <!-- <slot /> <= SignUP.vue에서 내용 불러올 때 사용 -->
+          <div class="page-title">
+            <img
+              class="back_img"
+              src="../../../assets/data_engineer.png"
+              alt="backendimg" />
+            <p class="title">
+              BACKEND PROJECT
+            </p>
+          </div>
+          <hr style="width: 50%; border-top:1px solid rgba(0, 0, 0, .2);" />
+          <div class="page_content">
+            page_content
+          </div>
+          <div class="page_close-btn">
+            <button
+              class="close_btn"
+              @click="$emit('close')">
+              CLOSE
+            </button>
           </div>
         </div>
       </div>
@@ -101,14 +58,6 @@ $font : 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   background: #5cb29e; 
 }
 
-.margin_modal {
-  width: 100%;
-  height: 100%;
-  margin: 50px;
-  margin-top: 250px;
-  margin-bottom: 150px;
-}
-
 .modalto {
   &.modal-overlay {
     display: flex;
@@ -128,7 +77,7 @@ $font : 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     overflow: hidden;
     display: flex;
     position: fixed;
-    width: 720px;
+    width: 520px;
     height: 700px;
     transform: translate(-50%, -50%);
     top: 50%;
@@ -142,7 +91,7 @@ $font : 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
         top: 0px;
         left: 0px;
         width: 100%;
-        max-width: 720px !important;
+        max-width: 520px !important;
         // height: 110px;
         padding: 20px 20px 0 20px;
         display: flex;
@@ -184,6 +133,7 @@ $font : 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
             color: $primary;
             margin-top: 10px;
             margin-bottom: 10px;
+            text-align: center;
           }
           .content {
             text-align: center;

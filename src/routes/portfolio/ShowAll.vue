@@ -17,11 +17,9 @@
               DATA ENGINEER PROJECT
             </a>
           </div>
-          <Deproject 
-            @click="closeDeModal"
-            v-if="demodal" />
         </figure>
       </div>
+
       <div class="item">
         <figure class="img_area">
           <img
@@ -35,11 +33,9 @@
               DATA ANALYSIS PROJECT
             </a>
           </div>
-          <Daproject 
-            @click="closeDaModal"
-            v-if="damodal" />
         </figure>
       </div>
+      
       <div class="item">
         <figure class="img_area">
           <img
@@ -53,13 +49,35 @@
               BACKEND PROJECT
             </a>
           </div>
-          <BackProject 
-            @click="closeBaModal"
-            v-if="backmodal" />
+        </figure>
+      </div>
+
+      <div class="item">
+        <figure class="img_area">
+          <img
+            class="img_img"
+            src="https://www.yan-holtz.com/img/portfolio/GenMapComp.png"
+            alt="project" />
+          <div class="text_box">
+            <a
+              @click="openModal"
+              class="sub_text">
+              BACKEND PROJECT
+            </a>
+          </div>
         </figure>
       </div>
     </div>
-  </div>  
+  </div>
+  <Deproject 
+    @click="closeDeModal"
+    v-if="demodal" />
+  <Daproject 
+    @click="closeDaModal"
+    v-if="damodal" />
+  <BackProject 
+    @click="closeBaModal"
+    v-if="backmodal" />
 </template>
 
 <script>
@@ -71,7 +89,7 @@ export default {
   components: {
     BackProject,
     Daproject,
-    Deproject
+    Deproject,
   },
   data() {
     return {
@@ -98,8 +116,8 @@ export default {
     },
     closeDeModal() {
       this.demodal = false;
-    },
     }
+  }
 }
 </script>
 
