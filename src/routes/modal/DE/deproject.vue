@@ -3,12 +3,9 @@
     name="modal"
     appear>
     <div
-      @click.self="$emit('close')"
       class="modalto modal-overlay">
-      <!--  -->
       <div class="modal_window">
         <div class="modal_content">
-          <!-- <slot /> <= SignUP.vue에서 내용 불러올 때 사용 -->
           <div class="page-title">
             <img
               class="back_img"

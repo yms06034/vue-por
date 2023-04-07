@@ -1,22 +1,24 @@
 <template>
   <p class="top_title">
-    Show All
+    Data Engineer
   </p>
   <div class="container">
     <div class="content">
       <div class="item">
         <figure class="img_area">
-          <img
-            class="img_img"
-            src="https://www.yan-holtz.com/img/portfolio/GenMapComp.png"
-            alt="project" />
-          <div class="text_box">
-            <a
-              @click="openDeModal"
-              class="sub_text">
-              DATA ENGINEER PROJECT
-            </a>
-          </div>
+          <a 
+            @click="openDeModal">
+            <img
+              class="img_img"
+              src="https://www.yan-holtz.com/img/portfolio/GenMapComp.png"
+              alt="project" />
+            <div class="text_box">
+              <a
+                class="sub_text">
+                DATA ENGINEER PROJECT
+              </a>
+            </div>
+          </a>
           <Deproject 
             @click="closeDeModal"
             v-if="demodal" />

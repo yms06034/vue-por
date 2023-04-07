@@ -1,25 +1,50 @@
 <template>
   <p class="top_title">
-    Show All
+    Data Analysis
   </p>
   <div class="container">
     <div class="content">
+      <!-- Kobert Project -->
       <div class="item">
         <figure class="img_area">
           <img
             class="img_img"
-            src="https://www.yan-holtz.com/img/portfolio/GenMapComp.png"
+            src="~assets/project/DA/kobert.png"
             alt="project" />
           <div class="text_box">
             <a
-              @click="openDaModal" 
+              @click="openKobert" 
               class="sub_text">
-              DATA ANALYSIS PROJECT
+              NLP PROJECT (Deep learning)
+              <hr style="width: 100%; border-top:1px solid rgba(255, 255, 255, .9);" />
+              <p class="sub_title">Bert를 활용한 가사 감성 분석 &amp; 시각화</p>
             </a>
           </div>
-          <Daproject 
-            @click="closeDaModal"
-            v-if="damodal" />
+          <Kobert 
+            @click="closeKobert"
+            v-if="kobert" />
+        </figure>
+      </div>
+
+      <!-- VGame2_data_Analysis -->
+      <div class="item">
+        <figure class="img_area">
+          <img
+            class="img_img"
+            src="~assets/project/DA/vgame.png"
+            alt="project" />
+          <div class="text_box">
+            <a
+              @click="openVgame" 
+              class="sub_text">
+              VAME DATA ANALYSIS
+              <hr style="width: 100%; border-top:1px solid rgba(255, 255, 255, .9);" />
+              <p class="sub_title">1970년 부터 2016년까지의 전 세계 게임 판매량 데이터를 분석</p>
+            </a>
+          </div>
+          <Vgame2 
+            @click="closeVgame"
+            v-if="vgame" />
         </figure>
       </div>
     </div>
@@ -27,25 +52,34 @@
 </template>
 
 <script>
-import Daproject from "../modal/DA/daproject";
+import Kobert from "../modal/DA/kobert_class";
+import Vgame2 from '../modal/DA/vgame2'
 
 export default {
   components: {
-    Daproject,
+    Kobert,
+    Vgame2
   },
   data() {
     return {
-      damodal: false,
+      kobert: false,
+      vgame: false,
     }
   },
   methods: {
-    openDaModal() {
-      this.damodal = true;
+    openKobert() {
+      this.kobert = true;
     },
-    closeDaModal() {
-      this.damodal = false;
+    closeKobert() {
+      this.kobert = false;
     },
-    }
+    openVgame() {
+      this.vgame = true;
+    },
+    closeVgame() {
+      this.vgame = false;
+    },
+  }
 }
 </script>
 

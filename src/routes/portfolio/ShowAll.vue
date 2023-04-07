@@ -4,97 +4,125 @@
   </p>
   <div class="container">
     <div class="content">
+      <!-- DATA ENGINEER PROEJECT -->
       <div class="item">
         <figure class="img_area">
-          <img
-            class="img_img"
-            src="https://www.yan-holtz.com/img/portfolio/GenMapComp.png"
-            alt="project" />
-          <div class="text_box">
-            <a
-              @click="openDeModal"
-              class="sub_text">
-              DATA ENGINEER PROJECT
-            </a>
-          </div>
+          <a 
+            @click="openDeModal">
+            <img
+              class="img_img"
+              src="https://www.yan-holtz.com/img/portfolio/GenMapComp.png"
+              alt="project" />
+            <div class="text_box">
+              <a
+                class="sub_text">
+                DATA ENGINEER PROJECT
+              </a>
+            </div>
+          </a>
+          <Deproject 
+            @click="closeDeModal"
+            v-if="demodal" />
         </figure>
       </div>
 
+
+
+
+      <!-- DATA ANALYSIS PROEJECT -->
+      <!-- Kobert Project -->
       <div class="item">
         <figure class="img_area">
           <img
             class="img_img"
-            src="https://www.yan-holtz.com/img/portfolio/GenMapComp.png"
+            src="~assets/project/DA/kobert.png"
             alt="project" />
           <div class="text_box">
             <a
-              @click="openDaModal" 
+              @click="openKobert" 
               class="sub_text">
-              DATA ANALYSIS PROJECT
+              NLP PROJECT (Deep learning)
+              <hr style="width: 100%; border-top:1px solid rgba(255, 255, 255, .9);" />
+              <p class="sub_title">Bert를 활용한 가사 감성 분석 &amp; 시각화</p>
             </a>
           </div>
-        </figure>
-      </div>
-      
-      <div class="item">
-        <figure class="img_area">
-          <img
-            class="img_img"
-            src="https://www.yan-holtz.com/img/portfolio/GenMapComp.png"
-            alt="project" />
-          <div class="text_box">
-            <a
-              @click="openBaModal"
-              class="sub_text">
-              BACKEND PROJECT
-            </a>
-          </div>
+          <Kobert 
+            @click="closeKobert"
+            v-if="kobert" />
         </figure>
       </div>
 
+      <!-- VGame2_data_Analysis -->
       <div class="item">
         <figure class="img_area">
           <img
             class="img_img"
-            src="https://www.yan-holtz.com/img/portfolio/GenMapComp.png"
+            src="~assets/project/DA/vgame.png"
             alt="project" />
           <div class="text_box">
             <a
-              @click="openModal"
+              @click="openVgame" 
               class="sub_text">
-              BACKEND PROJECT
+              VAME DATA ANALYSIS
+              <hr style="width: 100%; border-top:1px solid rgba(255, 255, 255, .9);" />
+              <p class="sub_title">1970년 부터 2016년까지의 전 세계 게임 판매량 데이터를 분석</p>
             </a>
           </div>
+          <Vgame2 
+            @click="closeVgame"
+            v-if="vgame" />
+        </figure>
+      </div>
+
+
+
+      <!-- BACKEND PROEJECT -->
+      <div class="item">
+        <figure class="img_area">
+          <a 
+            @click="openBaModal">
+            <img
+              class="img_img"
+              src="https://www.yan-holtz.com/img/portfolio/GenMapComp.png"
+              alt="project" />
+            <div class="text_box">
+              <a
+                class="sub_text">
+                DATA ENGINEER PROJECT
+              </a>
+            </div>
+          </a>
+          <Backproject 
+            @click="closeBaModal"
+            v-if="backmodal" />
         </figure>
       </div>
     </div>
-  </div>
-  <Deproject 
-    @click="closeDeModal"
-    v-if="demodal" />
-  <Daproject 
-    @click="closeDaModal"
-    v-if="damodal" />
-  <BackProject 
-    @click="closeBaModal"
-    v-if="backmodal" />
+  </div>  
 </template>
 
 <script>
-import BackProject from "../modal/BACK/backproject";
-import Daproject from "../modal/DA/daproject";
+// DE
 import Deproject from "../modal/DE/deproject";
+// DA
+import Kobert from "../modal/DA/kobert_class";
+import Vgame2 from "../modal/DA/vgame2"
+
+// BACK
+import Backproject from "../modal/BACK/backproject";
 
 export default {
   components: {
-    BackProject,
-    Daproject,
+    Backproject,
+    Kobert,
+    Vgame2,
     Deproject,
   },
   data() {
     return {
       backmodal: false,
-      damodal: false,
+      kobert: false,
+      vgame: false,
       demodal: false,
     }
   },
@@ -105,11 +133,17 @@ export default {
     closeBaModal() {
       this.backmodal = false;
     },
-    openDaModal() {
-      this.damodal = true;
+    openKobert() {
+      this.kobert = true;
     },
-    closeDaModal() {
-      this.damodal = false;
+    closeKobert() {
+      this.kobert = false;
+    },
+    openVgame() {
+      this.vgame = true;
+    },
+    closeVgame() {
+      this.vgame = false;
     },
     openDeModal() {
       this.demodal = true;
