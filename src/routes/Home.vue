@@ -528,7 +528,11 @@ header {
     .Home {
       a {
         color: $primary;
-        font-weight: bold;
+        font-size: 18px;
+        &:hover {
+          color: #111;
+          font-weight: bold;
+        }
       }
     }
     .pad-15 {
