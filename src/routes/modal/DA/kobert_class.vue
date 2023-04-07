@@ -39,6 +39,11 @@
                 src="https://user-images.githubusercontent.com/98085184/230531609-01fa48ca-22c6-434c-8dd7-a81b661a9b6c.png"
                 alt="kobert" />
               <p>사용자가 원하는 노래 제목을 적으면 가사를 크롤링 해온 후 Bert에 학습 시켜 6 Class로 나눠진 감정으로 색상별로 보여준다.</p>
+              <p>
+                Bert에 대한 Code는 <a
+                  class="link"
+                  href="https://github.com/yms06034/kobert_class/tree/master/kobert/models">여기 클릭</a>를 해서 보실 수 있습니다.
+              </p>
               <br />
               <p class="snd_title">
                 Pipeline

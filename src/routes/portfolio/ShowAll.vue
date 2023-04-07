@@ -5,27 +5,53 @@
   <div class="container">
     <div class="content">
       <!-- DATA ENGINEER PROEJECT -->
+      <!-- Spark_SQL Project -->
       <div class="item">
         <figure class="img_area">
           <a 
-            @click="openDeModal">
+            style="cursor:pointer;"
+            @click="d_openSparkSql">
             <img
               class="img_img"
-              src="https://www.yan-holtz.com/img/portfolio/GenMapComp.png"
+              src="~assets/project/DE/spark_sql.png"
               alt="project" />
             <div class="text_box">
-              <a
-                class="sub_text">
-                DATA ENGINEER PROJECT
+              <a class="sub_text">
+                SPARK SQL PROJECT
               </a>
+              <hr style="width: 100%; border-top:1px solid rgba(255, 255, 255, .9);" />
+              <p style="color:#ffffff;">Spark Sql를 활용한 Data Analysis &amp; DB </p>
             </div>
           </a>
-          <Deproject 
-            @click="closeDeModal"
-            v-if="demodal" />
+          <DSparkSQL 
+            @click="d_closeSparkSql"
+            v-if="d_sparksql" />
         </figure>
       </div>
 
+      <!-- FirstStep Project -->
+      <div class="item">
+        <figure class="img_area">
+          <a 
+            style="cursor:pointer;"
+            @click="d_openFirst">
+            <img
+              class="img_img"
+              src="~assets/project/BACK/firststep.png"
+              alt="project" />
+            <div class="text_box">
+              <a class="sub_text">
+                FLASK PIPELINE PROJECT
+              </a>
+              <hr style="width: 100%; border-top:1px solid rgba(255, 255, 255, .9);" />
+              <p style="color:#ffffff;">키워드 기반 여행지 추천 프로젝트 입니다.</p>
+            </div>
+          </a>
+          <DFirststep 
+            @click="d_closeFirst"
+            v-if="d_firststep" />
+        </figure>
+      </div>
 
 
 
@@ -33,19 +59,21 @@
       <!-- Kobert Project -->
       <div class="item">
         <figure class="img_area">
-          <img
-            class="img_img"
-            src="~assets/project/DA/kobert.png"
-            alt="project" />
-          <div class="text_box">
-            <a
-              @click="openKobert" 
-              class="sub_text">
-              NLP PROJECT (Deep learning)
-              <hr style="width: 100%; border-top:1px solid rgba(255, 255, 255, .9);" />
-              <p class="sub_title">Bert를 활용한 가사 감성 분석 &amp; 시각화</p>
-            </a>
-          </div>
+          <a
+            style="cursor:pointer;"
+            @click="openKobert">
+            <img
+              class="img_img"
+              src="~assets/project/DA/kobert.png"
+              alt="project" />
+            <div class="text_box">
+              <a class="sub_text">
+                NLP PROJECT (Deep learning)
+                <hr style="width: 100%; border-top:1px solid rgba(255, 255, 255, .9);" />
+                <p class="sub_title">Bert를 활용한 가사 감성 분석 &amp; 시각화</p>
+              </a>
+            </div>
+          </a>
           <Kobert 
             @click="closeKobert"
             v-if="kobert" />
@@ -55,19 +83,21 @@
       <!-- VGame2_data_Analysis -->
       <div class="item">
         <figure class="img_area">
-          <img
-            class="img_img"
-            src="~assets/project/DA/vgame.png"
-            alt="project" />
-          <div class="text_box">
-            <a
-              @click="openVgame" 
-              class="sub_text">
-              VAME DATA ANALYSIS
-              <hr style="width: 100%; border-top:1px solid rgba(255, 255, 255, .9);" />
-              <p class="sub_title">1970년 부터 2016년까지의 전 세계 게임 판매량 데이터를 분석</p>
-            </a>
-          </div>
+          <a
+            style="cursor:pointer;"
+            @click="openVgame">
+            <img
+              class="img_img"
+              src="~assets/project/DA/vgame.png"
+              alt="project" />
+            <div class="text_box">
+              <a class="sub_text">
+                GAME DATA ANALYSIS
+                <hr style="width: 100%; border-top:1px solid rgba(255, 255, 255, .9);" />
+                <p class="sub_title">1970년 부터 2016년까지의 전 세계 게임 판매량 데이터를 분석</p>
+              </a>
+            </div>
+          </a>
           <Vgame2 
             @click="closeVgame"
             v-if="vgame" />
@@ -77,62 +107,36 @@
 
 
       <!-- BACKEND PROEJECT -->
-      <div class="item">
-        <figure class="img_area">
-          <a 
-            @click="openBaModal">
-            <img
-              class="img_img"
-              src="https://www.yan-holtz.com/img/portfolio/GenMapComp.png"
-              alt="project" />
-            <div class="text_box">
-              <a
-                class="sub_text">
-                DATA ENGINEER PROJECT
-              </a>
-            </div>
-          </a>
-          <Backproject 
-            @click="closeBaModal"
-            v-if="backmodal" />
-        </figure>
-      </div>
     </div>
   </div>  
 </template>
 
 <script>
 // DE
-import Deproject from "../modal/DE/deproject";
+import DFirststep from "../modal/BACK/firststep";
+import DSparkSQL from "../modal/DE/spark_sql";
 // DA
 import Kobert from "../modal/DA/kobert_class";
 import Vgame2 from "../modal/DA/vgame2"
 
 // BACK
-import Backproject from "../modal/BACK/backproject";
 
 export default {
   components: {
-    Backproject,
     Kobert,
     Vgame2,
-    Deproject,
+    DFirststep,
+    DSparkSQL,
   },
   data() {
     return {
-      backmodal: false,
       kobert: false,
       vgame: false,
-      demodal: false,
+      d_firststep: false,
+      d_sparksql: false,
     }
   },
   methods: {
-    openBaModal() {
-      this.backmodal = true;
-    },
-    closeBaModal() {
-      this.backmodal = false;
-    },
     openKobert() {
       this.kobert = true;
     },
@@ -145,11 +149,17 @@ export default {
     closeVgame() {
       this.vgame = false;
     },
-    openDeModal() {
-      this.demodal = true;
+    d_openFirst() {
+      this.d_firststep = true;
     },
-    closeDeModal() {
-      this.demodal = false;
+    d_closeFirst() {
+      this.d_firststep = false;
+    },
+    d_openSparkSql() {
+      this.d_sparksql = true;
+    },
+    d_closeSparkSql() {
+      this.d_sparksql = false;
     }
   }
 }

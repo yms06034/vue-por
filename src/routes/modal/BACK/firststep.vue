@@ -9,14 +9,14 @@
         <div class="modal_content">
           <div class="page-title">
             <p class="title">
-              VGAME_DATA ANALYSIS
+              FLASK FIRSTSTEP ML PROJECT
             </p>
             <p class="sub_title">
-              2016년까지의 게임 판매량 데이터를 분석한 프로젝트 입니다.
+              Find what you are looking for travel place
             </p>
             <a
               class="github_link" 
-              href="https://github.com/yms06034/vgames2_data">
+              href="https://github.com/yms06034/flask_firststep-ML-">
               GIBHUB
             </a>
           </div>
@@ -26,25 +26,30 @@
                 Description
               </p>
               <hr style="width: 100%; border-top:1px solid rgba(0, 0, 0, .1);" />
-              <p>게임 판매량은 1970년대부터 2016년도까지 북미, 유럽, 일본, 그 이외 지역으로 나뉘어 기록되이었습니다.</p>
-              <p>분석에는 전체 데이터 중, 마지막 연도인 16년도에 사용중인 플랫폼 중 가장 출시년도가 빠른 플랫폼의 출시일부터 사용했습니다(플랫폼은 X360, 2005년 부터 2016년 까지).</p>
+              <p>본 프로젝트는 사용자가 이전에 다녀 왔던 여행지를 검색하면 그 여행지와 비슷한 느낌의 여행지를 추천해주는 프로젝트 입니다.</p>
               <br />
-              <strong>분석</strong> <br />
-              - 1. 지역별 선호 장르 <br />
-              - 2. 연도별 선호 장르 <br />
-              - 3. 총 출고량 변화 <br /> 
-              - 4. ...
-              <p>
-                에 대한 분석을 진행하였습니다. 구체적인 과정은 <a
-                  class="link"
-                  href="https://github.com/yms06034/vgames2_data/blob/master/vgames2_data.ipynb">vgames2_data</a>에 있습니다.
-              </p>
+              <strong>문제 정의 </strong> <br />
+              - 1. 연령층이 높을 수록 인터넷 검색을 어려워하는 경향이 강하다. <br />
+              - 2. 내가 다녀왔던 지역과 비슷한 느낌의 여행지를 찾고 싶다. <br />
+              - 3. 누구나 쉽게 여행지를 정보를 찾아야 한다. <br /> 
               <br />
               <p></p>
+              <p>홈페이지에 접속해 간단하게 여행지만 입력하면 사용할 수 있도록 개발 하였습니다.</p>
+              <p>머신러닝 모델은 <strong>CountVectorizer</strong>으로 Cosine Similarity 기반 추천 시스템 입니다.</p>
               <img
                 class="content_img"
-                src="https://user-images.githubusercontent.com/94027045/220020075-088a61a4-2fc4-4f4b-969c-bf1e729c691f.png"
+                src="https://miro.medium.com/v2/resize:fit:1400/1*LfW66-WsYkFqWc4XYJbEJg.png"
                 alt="img" />
+              <br />
+              <p class="snd_title">
+                Pipeline
+              </p>
+              <hr style="width: 100%; border-top:1px solid rgba(0, 0, 0, .1);" />              
+              <img
+                class="content_img"
+                src="https://user-images.githubusercontent.com/98085184/230550401-ab6b7d75-5832-4d32-bddd-c0e392ac402f.png"
+                alt="pipeline" />
+              <p>총 2곳에서 여행지 데이터를 추출 한 후 Data Wrangling 이후 DB에 담아주고, ML model을 학습 시킨 후 Flask를 통해 배포하였습니다.</p>
               <br />
               <p class="snd_title">
                 Read more
@@ -53,7 +58,7 @@
               <p>
                 The source code of the project are of course on <a
                   class="link"
-                  href="https://github.com/yms06034/vgames2_data">Github.</a>
+                  href="https://github.com/yms06034/flask_firststep-ML-">Github.</a>
               </p>
             </div>
           </div>
@@ -198,8 +203,8 @@ $font : 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
           .content_img {
             margin-top: 30px;
             margin-bottom: 30px;
-            width: 90%;
-            height: 90%;
+            width: 95%;
+            height: 95%;
           }
         }
       }

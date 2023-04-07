@@ -7,19 +7,22 @@
       <!-- Kobert Project -->
       <div class="item">
         <figure class="img_area">
-          <img
-            class="img_img"
-            src="~assets/project/DA/kobert.png"
-            alt="project" />
-          <div class="text_box">
-            <a
-              @click="openKobert" 
-              class="sub_text">
-              NLP PROJECT (Deep learning)
-              <hr style="width: 100%; border-top:1px solid rgba(255, 255, 255, .9);" />
-              <p class="sub_title">Bert를 활용한 가사 감성 분석 &amp; 시각화</p>
-            </a>
-          </div>
+          <a 
+            style="cursor:pointer;"
+            @click="openKobert">
+            <img
+              class="img_img"
+              src="~assets/project/DA/kobert.png"
+              alt="project" />
+            <div class="text_box">
+              <a
+                class="sub_text">
+                NLP PROJECT (Deep learning)
+                <hr style="width: 100%; border-top:1px solid rgba(255, 255, 255, .9);" />
+                <p class="sub_title">Bert를 활용한 가사 감성 분석 &amp; 시각화</p>
+              </a>
+            </div>
+          </a>
           <Kobert 
             @click="closeKobert"
             v-if="kobert" />
@@ -29,19 +32,23 @@
       <!-- VGame2_data_Analysis -->
       <div class="item">
         <figure class="img_area">
-          <img
-            class="img_img"
-            src="~assets/project/DA/vgame.png"
-            alt="project" />
-          <div class="text_box">
-            <a
-              @click="openVgame" 
-              class="sub_text">
-              VAME DATA ANALYSIS
-              <hr style="width: 100%; border-top:1px solid rgba(255, 255, 255, .9);" />
-              <p class="sub_title">1970년 부터 2016년까지의 전 세계 게임 판매량 데이터를 분석</p>
-            </a>
-          </div>
+          <a 
+            style="cursor:pointer;"
+            @click="openVgame">
+            <img
+              class="img_img"
+              src="~assets/project/DA/vgame.png"
+              alt="project" />
+            <div class="text_box">
+              <a
+                
+                class="sub_text">
+                GAME DATA ANALYSIS
+                <hr style="width: 100%; border-top:1px solid rgba(255, 255, 255, .9);" />
+                <p class="sub_title">1970년 부터 2016년까지의 전 세계 게임 판매량 데이터를 분석</p>
+              </a>
+            </div>
+          </a>
           <Vgame2 
             @click="closeVgame"
             v-if="vgame" />

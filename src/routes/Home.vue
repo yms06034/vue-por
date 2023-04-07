@@ -1,19 +1,13 @@
 <template>
   <header>
-    <div
-      id="top-navbar--wrap"
-      class="top-navbar">
-      <div>
-        <a
-          class="aa pad-15 weight primary"
-          href="/">HOME</a>
+    <div class="header_area">
+      <div class="Home">
+        <a href="/">HOME</a>
       </div>
-      <div class="navber_right">
-        <div class="pad-15">
-          <a @click="scrollVisit()">INFO</a>
-          <a @click="scrollpor()">PORTFOLIO</a>
-          <a @click="scrollcontact()">CONTACT</a>
-        </div>
+      <div class="pad-15">
+        <a @click="scrollVisit()">INFO</a>
+        <a @click="scrollpor()">PORTFOLIO</a>
+        <a @click="scrollcontact()">CONTACT</a>
       </div>
     </div>
   </header>
@@ -518,32 +512,38 @@ $font : 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 $font2: 'Roboto Slab', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 
 header { 
-  .top-navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #fff;
+  z-index: 3000;
+  .header_area {
     margin: 0 auto;
     max-width: 1140px;
-    padding-top: 35px;
-    padding-bottom: 30px;
     display: flex;
     justify-content: space-between;
-    .aa {
-      font-size: 18px;
-     &:hover {
-        color: #251667; 
-    }
-      }
-    .navber_right {
-      display: flex;
-      flex-direction: row;
-      font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    align-items: center;
+    padding: 10px 0;
+    .Home {
       a {
-        cursor: pointer;
-        margin-right: 25px;
+        color: $primary;
+        font-weight: bold;
+      }
+    }
+    .pad-15 {
+      color: #000;
+      font-family: $font !important;
+      a {
+        margin-right: 40px;
+        &:last-child {          
+          margin-right: 0;
+        }
         &:hover {
           color: $primary;
+          cursor: pointer;
+          padding-bottom: 15px;
           border-bottom: 3px solid $primary;
-        }
-        &:last-child {
-          margin-right: 0;
         }
       }
     }
@@ -556,10 +556,11 @@ header {
     text-align: center;
     #tsparticles {
       width: 100%;
-      height: 600px;
+      height: 700px;
       background-size: cover;
       background-position: 50% 50%;
       background-repeat: no-repeat;
+      padding-top: 100px;
     }
     .textlanding {
       position: absolute;

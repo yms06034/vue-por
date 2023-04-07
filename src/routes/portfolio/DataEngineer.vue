@@ -4,24 +4,53 @@
   </p>
   <div class="container">
     <div class="content">
+      <!-- Spark_SQL Project -->
       <div class="item">
         <figure class="img_area">
           <a 
-            @click="openDeModal">
+            style="cursor:pointer;"
+            @click="d_openSparkSql">
             <img
               class="img_img"
-              src="https://www.yan-holtz.com/img/portfolio/GenMapComp.png"
+              src="~assets/project/DE/spark_sql.png"
               alt="project" />
             <div class="text_box">
               <a
                 class="sub_text">
-                DATA ENGINEER PROJECT
+                SPARK SQL PROJECT
               </a>
+              <hr style="width: 100%; border-top:1px solid rgba(255, 255, 255, .9);" />
+              <p style="color:#ffffff;">Spark Sql를 활용한 Data Analysis &amp; DB </p>
             </div>
           </a>
-          <Deproject 
-            @click="closeDeModal"
-            v-if="demodal" />
+          <DSparkSQL 
+            @click="d_closeSparkSql"
+            v-if="d_sparksql" />
+        </figure>
+      </div>
+
+      <!-- FirstStep Project -->
+      <div class="item">
+        <figure class="img_area">
+          <a 
+            style="cursor:pointer;"
+            @click="d_openFirst">
+            <img
+              class="img_img"
+              src="~assets/project/BACK/firststep.png"
+              alt="project" />
+            <div class="text_box">
+              <a
+                class="sub_text">
+                FLASK PIPELINE PROJECT
+              </a>
+              <hr style="width: 100%; border-top:1px solid rgba(255, 255, 255, .9);" />
+              <p style="color:#ffffff;">키워드 기반 여행지 추천 프로젝트 입니다.</p>
+            </div>
+          </a>
+          <Firststep 
+            @click="d_closeFirst"
+            v-if="d_firststep" />
         </figure>
       </div>
     </div>
@@ -29,23 +58,23 @@
 </template>
 
 <script>
-import Deproject from "../modal/DE/deproject";
+import Firststep from "../modal/BACK/firststep";
 
 export default {
   components: {
-    Deproject
+    Firststep
   },
   data() {
     return {
-      demodal: false,
+      d_firststep: false,
     }
   },
   methods: {
-    openDeModal() {
-      this.demodal = true;
+    d_openFirst() {
+      this.d_firststep = true;
     },
-    closeDeModal() {
-      this.demodal = false;
+    d_closeFirst() {
+      this.d_firststep = false;
     },
     }
 }

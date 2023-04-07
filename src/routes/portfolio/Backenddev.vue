@@ -1,25 +1,30 @@
 <template>
   <p class="top_title">
-    Show All
+    Backend
   </p>
   <div class="container">
     <div class="content">
       <div class="item">
         <figure class="img_area">
-          <img
-            class="img_img"
-            src="https://www.yan-holtz.com/img/portfolio/GenMapComp.png"
-            alt="project" />
-          <div class="text_box">
-            <a
-              @click="openBaModal"
-              class="sub_text">
-              BACKEND PROJECT
-            </a>
-          </div>
-          <BackProject 
-            @click="closeBaModal"
-            v-if="backmodal" />
+          <a 
+            style="cursor:pointer;"
+            @click="b_openFirst">
+            <img
+              class="img_img"
+              src="~assets/project/BACK/firststep.png"
+              alt="project" />
+            <div class="text_box">
+              <a
+                class="sub_text">
+                FLASK PIPELINE PROJECT
+              </a>
+              <hr style="width: 100%; border-top:1px solid rgba(255, 255, 255, .9);" />
+              <p style="color:#ffffff;">키워드 기반 여행지 추천 프로젝트 입니다.</p>
+            </div>
+          </a>
+          <Firststep 
+            @click="b_closeFirst"
+            v-if="b_firststep" />
         </figure>
       </div>
     </div>
@@ -27,24 +32,25 @@
 </template>
 
 <script>
-import BackProject from "../modal/BACK/backproject";
+import Firststep from "../modal/BACK/firststep";
+
 export default {
   components: {
-    BackProject,
+    Firststep
   },
   data() {
     return {
-      backmodal: false,
+      b_firststep: false,
     }
   },
   methods: {
-    openBaModal() {
-      this.backmodal = true;
+    b_openFirst() {
+      this.b_firststep = true;
     },
-    closeBaModal() {
-      this.backmodal = false;
+    b_closeFirst() {
+      this.b_firststep = false;
     },
-  }
+    }
 }
 </script>
 
