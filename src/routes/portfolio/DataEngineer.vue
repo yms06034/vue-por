@@ -53,20 +53,51 @@
             v-if="d_firststep" />
         </figure>
       </div>
+
+      <!-- Startupsplace Project -->
+      <div class="item">
+        <figure class="img_area">
+          <a 
+            style="cursor:pointer;"
+            @click="d_openStartups">
+            <img
+              class="img_img"
+              src="~assets/project/DE/startupsplace.png"
+              alt="project" />
+            <div class="text_box">
+              <a
+                class="sub_text">
+                StartupsPlace Project
+              </a>
+              <hr style="width: 100%; border-top:1px solid rgba(255, 255, 255, .9);" />
+              <p style="color:#ffffff;">키워드 하나로 찾는 신규 창업자를 위한 창업 관련 DATA &amp; DashBorad 개발</p>
+            </div>
+          </a>
+          <Sparkupsplace
+            @click="d_closeStartups"
+            v-if="d_startupspalce" />
+        </figure>
+      </div>
     </div>
   </div>  
 </template>
 
 <script>
 import Firststep from "../modal/BACK/firststep";
+import DSparkSQL from "../modal/DE/spark_sql";
+import Sparkupsplace from "../modal/BACK/startupsplace";
 
 export default {
   components: {
-    Firststep
+    Firststep,
+    DSparkSQL,
+    Sparkupsplace,
   },
   data() {
     return {
       d_firststep: false,
+      d_sparksql: false,
+      d_startupspalce: false,
     }
   },
   methods: {
@@ -75,6 +106,18 @@ export default {
     },
     d_closeFirst() {
       this.d_firststep = false;
+    },
+    d_openSparkSql() {
+      this.d_sparksql = true;
+    },
+    d_closeSparkSql() {
+      this.d_sparksql = false;
+    },
+    d_openStartups() {
+      this.d_startupspalce = true;
+    },
+    d_closeStartups() {
+      this.d_startupspalce = false;
     },
     }
 }

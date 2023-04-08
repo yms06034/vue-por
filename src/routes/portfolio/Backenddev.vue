@@ -4,6 +4,7 @@
   </p>
   <div class="container">
     <div class="content">
+      <!-- FIRSTSTEP PROJECT -->
       <div class="item">
         <figure class="img_area">
           <a 
@@ -27,20 +28,48 @@
             v-if="b_firststep" />
         </figure>
       </div>
+
+      <!-- STARTPUPSPLACE PROJECT -->
+      <div class="item">
+        <figure class="img_area">
+          <a 
+            style="cursor:pointer;"
+            @click="b_openStartups">
+            <img
+              class="img_img"
+              src="~assets/project/DE/startupsplace.png"
+              alt="project" />
+            <div class="text_box">
+              <a
+                class="sub_text">
+                StartupsPlace Project
+              </a>
+              <hr style="width: 100%; border-top:1px solid rgba(255, 255, 255, .9);" />
+              <p style="color:#ffffff;">키워드 하나로 찾는 신규 창업자를 위한 창업 관련 DATA &amp; DashBorad 개발</p>
+            </div>
+          </a>
+          <Startupsplace 
+            @click="b_closeStartups"
+            v-if="b_startupsplace" />
+        </figure>
+      </div>
     </div>
   </div>  
 </template>
 
 <script>
 import Firststep from "../modal/BACK/firststep";
+import Startupsplace from '../modal/BACK/startupsplace';
 
 export default {
   components: {
-    Firststep
+    Firststep,
+    Startupsplace,
   },
   data() {
     return {
       b_firststep: false,
+      b_startupsplace: false,
     }
   },
   methods: {
@@ -49,6 +78,12 @@ export default {
     },
     b_closeFirst() {
       this.b_firststep = false;
+    },
+    b_openStartups() {
+      this.b_startupsplace = true;
+    },
+    b_closeStartups() {
+      this.b_startupsplace = false;
     },
     }
 }

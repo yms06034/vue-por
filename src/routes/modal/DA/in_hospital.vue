@@ -9,14 +9,14 @@
         <div class="modal_content">
           <div class="page-title">
             <p class="title">
-              SPARK SQL PROJECT
+              In Hospital Mortality Prediction
             </p>
             <p class="sub_title">
-              Spark Sql를 활용한 Data Analysis &amp; DB 
+              machine learning-based, retrospective analysis of the MIMIC-III database
             </p>
             <a
               class="github_link" 
-              href="https://github.com/yms06034/Spark_SQL">
+              href="https://github.com/yms06034/ML_PROJECT_IHM">
               GIBHUB
             </a>
           </div>
@@ -26,29 +26,28 @@
                 Description
               </p>
               <hr style="width: 100%; border-top:1px solid rgba(0, 0, 0, .1);" />
-              <p>본 프로젝트는 Spark SQL를 활용해 Data Analysis &amp; Data Wrangling를 진행한 후 DA가 사용할 수 있도록 Data Warehouse에 저장해 주었다.</p>
-              <p>
-                프로젝트의 자세한 코드 및 내용은 제 <a
-                  class="link"
-                  href="https://github.com/yms06034/Spark_SQL">Repositories</a>에서 확인 할 수 있습니다.
-              </p>
+              <p>본 프로젝트는 MIMIC-III 데이터를 사용해 중환자실에 입원한 심부전 환자들의 사망 여부 예측 프로젝트입니다.</p>
+              <p>결측치와 이상치에 대해 분석을 진행하고 사망자와 생존자간에 차이점을 찾아냅니다.</p>
+              <p></p>
+              <p>K근접 이웃, 로지스틱 회귀, LightGBM, 로지스틱 회귀와 LightGBM을 <strong>Soft Voting</strong>을 통해 합친 모델로 각각 학습 후 성능을 테스트했습니다. 가장 성능이 좋았던 Soft Voting 모델로 최종 학습 후 모델이 판단한 생존과 사망에 중요한 특성들을 나타냈습니다.</p>
               <img
                 class="content_img"
-                src="https://user-images.githubusercontent.com/98085184/230559238-a03f6085-4ab6-463b-b9a8-3636881fcce6.png"
+                src="https://user-images.githubusercontent.com/94027045/220046798-3515271d-b274-45e2-b829-cc07f091d434.png"
                 alt="kobert" />
-              <p>최대한 실무 데이터와 비슷한 데이터를 찾아 진행하였고,  Brazilian E-Commerce Public Dataset을 사용하였다</p>
-              <p>위에 이미지는 해당 E-commerce Data의 DB Schema다.</p><br />
-
-              <ul><strong>Principal Dataset</strong></ul>
-              <li>Order ID</li>
-              <li>Customer ID</li>
-              <li>Order Status</li>
-              <li>Order Purchase Timestamp</li>
-              <li>Order Approved at</li>
-              <li>Order Delivered Carrier date</li>
-              <li>Order Delivered Customer date</li>
-              <li>Order Estimated delivered date</li>
+              <p>
+                분석 및 예측에 대한 결과는 제 <a
+                  class="link"
+                  href="https://github.com/yms06034/ML_PROJECT_IHM">Repositories</a>에서 확인 할 수 있습니다.
+              </p>
               <br />
+              <p class="snd_title">
+                PDP Chart
+              </p>
+              <hr style="width: 100%; border-top:1px solid rgba(0, 0, 0, .1);" />              
+              <img
+                class="content_img"
+                src="https://user-images.githubusercontent.com/94027045/220046220-fe443145-3a1f-4885-bcb1-dc181ab0c472.png"
+                alt="pipeline" />
               <p class="snd_title">
                 Read more
               </p>
@@ -56,7 +55,7 @@
               <p>
                 The source code of the project are of course on <a
                   class="link"
-                  href="https://github.com/yms06034/Spark_SQL">Github.</a>
+                  href="https://github.com/yms06034/ML_PROJECT_IHM">Github.</a>
               </p>
             </div>
           </div>

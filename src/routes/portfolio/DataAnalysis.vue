@@ -29,6 +29,31 @@
         </figure>
       </div>
 
+      <!-- ICU_with_HF -->
+      <div class="item">
+        <figure class="img_area">
+          <a 
+            style="cursor:pointer;"
+            @click="openIh">
+            <img
+              class="img_img"
+              src="~assets/project/DA/in_hospital.png"
+              alt="project" />
+            <div class="text_box">
+              <a
+                class="sub_text">
+                In Hospital Mortality Prediction
+                <hr style="width: 100%; border-top:1px solid rgba(255, 255, 255, .9);" />
+                <p class="sub_title">MIMIC-III 데이터를 사용해 중환자실에 입원한 심부전 환자들의 사망 여부 예측 프로젝트</p>
+              </a>
+            </div>
+          </a>
+          <Inhospotal 
+            @click="closeIh"
+            v-if="in_hospital" />
+        </figure>
+      </div>
+
       <!-- VGame2_data_Analysis -->
       <div class="item">
         <figure class="img_area">
@@ -41,7 +66,6 @@
               alt="project" />
             <div class="text_box">
               <a
-                
                 class="sub_text">
                 GAME DATA ANALYSIS
                 <hr style="width: 100%; border-top:1px solid rgba(255, 255, 255, .9);" />
@@ -60,17 +84,20 @@
 
 <script>
 import Kobert from "../modal/DA/kobert_class";
-import Vgame2 from '../modal/DA/vgame2'
+import Vgame2 from '../modal/DA/vgame2';
+import Inhospotal from "../modal/DA/in_hospital"
 
 export default {
   components: {
     Kobert,
-    Vgame2
+    Vgame2,
+    Inhospotal
   },
   data() {
     return {
       kobert: false,
       vgame: false,
+      in_hospital: false,
     }
   },
   methods: {
@@ -84,6 +111,12 @@ export default {
       this.vgame = true;
     },
     closeVgame() {
+      this.vgame = false;
+    },
+    openIh() {
+      this.in_hospital = true;
+    },
+    closeIh() {
       this.vgame = false;
     },
   }

@@ -9,14 +9,14 @@
         <div class="modal_content">
           <div class="page-title">
             <p class="title">
-              SPARK SQL PROJECT
+              StartupsPlace Project
             </p>
             <p class="sub_title">
-              Spark Sql를 활용한 Data Analysis &amp; DB 
+              키워드 하나로 찾는 신규 창업자를 위한 창업 관련 DATA &amp; DashBorad 개발
             </p>
             <a
               class="github_link" 
-              href="https://github.com/yms06034/Spark_SQL">
+              href="https://github.com/yms06034/StartupsPlace">
               GIBHUB
             </a>
           </div>
@@ -26,28 +26,30 @@
                 Description
               </p>
               <hr style="width: 100%; border-top:1px solid rgba(0, 0, 0, .1);" />
-              <p>본 프로젝트는 Spark SQL를 활용해 Data Analysis &amp; Data Wrangling를 진행한 후 DA가 사용할 수 있도록 Data Warehouse에 저장해 주었다.</p>
-              <p>
-                프로젝트의 자세한 코드 및 내용은 제 <a
-                  class="link"
-                  href="https://github.com/yms06034/Spark_SQL">Repositories</a>에서 확인 할 수 있습니다.
-              </p>
+              <p>본 프로젝트는 사용자가 이전에 다녀 왔던 여행지를 검색하면 그 여행지와 비슷한 느낌의 여행지를 추천해주는 프로젝트 입니다.</p>
+              <br />
+              <strong>문제 정의 </strong> <br />
+              - 1. 연령층이 높을 수록 인터넷 검색을 어려워하는 경향이 강하다. <br />
+              - 2. 내가 다녀왔던 지역과 비슷한 느낌의 여행지를 찾고 싶다. <br />
+              - 3. 누구나 쉽게 여행지를 정보를 찾아야 한다. <br /> 
+              <br />
+              <p></p>
+              <p>홈페이지에 접속해 간단하게 여행지만 입력하면 사용할 수 있도록 개발 하였습니다.</p>
+              <p>머신러닝 모델은 <strong>CountVectorizer</strong>으로 Cosine Similarity 기반 추천 시스템 입니다.</p>
               <img
                 class="content_img"
-                src="https://user-images.githubusercontent.com/98085184/230559238-a03f6085-4ab6-463b-b9a8-3636881fcce6.png"
-                alt="kobert" />
-              <p>최대한 실무 데이터와 비슷한 데이터를 찾아 진행하였고,  Brazilian E-Commerce Public Dataset을 사용하였다</p>
-              <p>위에 이미지는 해당 E-commerce Data의 DB Schema다.</p><br />
-
-              <ul><strong>Principal Dataset</strong></ul>
-              <li>Order ID</li>
-              <li>Customer ID</li>
-              <li>Order Status</li>
-              <li>Order Purchase Timestamp</li>
-              <li>Order Approved at</li>
-              <li>Order Delivered Carrier date</li>
-              <li>Order Delivered Customer date</li>
-              <li>Order Estimated delivered date</li>
+                src="https://miro.medium.com/v2/resize:fit:1400/1*LfW66-WsYkFqWc4XYJbEJg.png"
+                alt="img" />
+              <br />
+              <p class="snd_title">
+                Pipeline
+              </p>
+              <hr style="width: 100%; border-top:1px solid rgba(0, 0, 0, .1);" />              
+              <img
+                class="content_img"
+                src="https://user-images.githubusercontent.com/98085184/230550401-ab6b7d75-5832-4d32-bddd-c0e392ac402f.png"
+                alt="pipeline" />
+              <p>총 2곳에서 여행지 데이터를 추출 한 후 Data Wrangling 이후 DB에 담아주고, ML model을 학습 시킨 후 Flask를 통해 배포하였습니다.</p>
               <br />
               <p class="snd_title">
                 Read more
@@ -56,7 +58,7 @@
               <p>
                 The source code of the project are of course on <a
                   class="link"
-                  href="https://github.com/yms06034/Spark_SQL">Github.</a>
+                  href="https://github.com/yms06034/StartupsPlace">Github.</a>
               </p>
             </div>
           </div>
@@ -201,8 +203,8 @@ $font : 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
           .content_img {
             margin-top: 30px;
             margin-bottom: 30px;
-            width: 100%;
-            height: 100%;
+            width: 95%;
+            height: 95%;
           }
         }
       }

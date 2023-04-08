@@ -80,6 +80,31 @@
         </figure>
       </div>
 
+      <!-- ICU_with_HF -->
+      <div class="item">
+        <figure class="img_area">
+          <a 
+            style="cursor:pointer;"
+            @click="openIh">
+            <img
+              class="img_img"
+              src="~assets/project/DA/in_hospital.png"
+              alt="project" />
+            <div class="text_box">
+              <a
+                class="sub_text">
+                In Hospital Mortality Prediction
+                <hr style="width: 100%; border-top:1px solid rgba(255, 255, 255, .9);" />
+                <p class="sub_title">MIMIC-III 데이터를 사용해 중환자실에 입원한 심부전 환자들의 사망 여부 예측 프로젝트</p>
+              </a>
+            </div>
+          </a>
+          <Inhospotal 
+            @click="closeIh"
+            v-if="in_hospital" />
+        </figure>
+      </div>
+
       <!-- VGame2_data_Analysis -->
       <div class="item">
         <figure class="img_area">
@@ -107,6 +132,29 @@
 
 
       <!-- BACKEND PROEJECT -->
+      <!-- startupsplace -->
+      <div class="item">
+        <figure class="img_area">
+          <a
+            style="cursor:pointer;"
+            @click="b_openStartups">
+            <img
+              class="img_img"
+              src="~assets/project/DE/startupsplace.png"
+              alt="project" />
+            <div class="text_box">
+              <a class="sub_text">
+                StartupsPlace Project
+                <hr style="width: 100%; border-top:1px solid rgba(255, 255, 255, .9);" />
+                <p class="sub_title">키워드 하나로 찾는 신규 창업자를 위한 창업 관련 DATA &amp; DashBorad 개발</p>
+              </a>
+            </div>
+          </a>
+          <Startupsplace 
+            @click="b_closeStartups"
+            v-if="b_startupspalce" />
+        </figure>
+      </div>
     </div>
   </div>  
 </template>
@@ -117,16 +165,19 @@ import DFirststep from "../modal/BACK/firststep";
 import DSparkSQL from "../modal/DE/spark_sql";
 // DA
 import Kobert from "../modal/DA/kobert_class";
-import Vgame2 from "../modal/DA/vgame2"
-
+import Vgame2 from "../modal/DA/vgame2";
+import Inhospotal from "../modal/DA/in_hospital";
 // BACK
+import Startupsplace from "../modal/BACK/startupsplace"
 
 export default {
   components: {
     Kobert,
     Vgame2,
+    Inhospotal,
     DFirststep,
     DSparkSQL,
+    Startupsplace,
   },
   data() {
     return {
@@ -134,6 +185,8 @@ export default {
       vgame: false,
       d_firststep: false,
       d_sparksql: false,
+      in_hospital: false,
+      b_startupspalce: false,
     }
   },
   methods: {
@@ -160,7 +213,19 @@ export default {
     },
     d_closeSparkSql() {
       this.d_sparksql = false;
-    }
+    },
+    openIh() {
+      this.in_hospital = true;
+    },
+    closeIh() {
+      this.in_hospital = false;
+    },
+    b_openStartups() {
+      this.b_startupspalce = true;
+    },
+    b_closeStartups() {
+      this.b_startupspalce = false;
+    },
   }
 }
 </script>
