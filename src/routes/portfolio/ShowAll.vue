@@ -5,6 +5,30 @@
   <div class="container">
     <div class="content">
       <!-- DATA ENGINEER PROEJECT -->
+      <!-- Donone Project -->
+      <div class="item">
+        <figure class="img_area">
+          <a 
+            style="cursor:pointer;"
+            @click="d_openDonone">
+            <img
+              class="img_img"
+              src="~assets/project/DE/donone.png"
+              alt="project" />
+            <div class="text_box">
+              <a class="sub_text">
+                ETL PIPELINE PROJECT (AIRFLOW)
+              </a>
+              <hr style="width: 100%; border-top:1px solid rgba(255, 255, 255, .9);" />
+              <p style="color:#ffffff;">실제 쇼핑몰 데이터 Airflow를 활용해 Pipeline으로 처리한 프로젝트 입니다.</p>
+            </div>
+          </a>
+          <Donone 
+            @click="d_closeDonone"
+            v-if="d_donone" />
+        </figure>
+      </div>
+
       <!-- Spark_SQL Project -->
       <div class="item">
         <figure class="img_area">
@@ -163,6 +187,7 @@
 // DE
 import DFirststep from "../modal/BACK/firststep";
 import DSparkSQL from "../modal/DE/spark_sql";
+import Donone from '..//modal/DE/donone';
 // DA
 import Kobert from "../modal/DA/kobert_class";
 import Vgame2 from "../modal/DA/vgame2";
@@ -178,6 +203,7 @@ export default {
     DFirststep,
     DSparkSQL,
     Startupsplace,
+    Donone,
   },
   data() {
     return {
@@ -187,6 +213,7 @@ export default {
       d_sparksql: false,
       in_hospital: false,
       b_startupspalce: false,
+      d_donone: false,
     }
   },
   methods: {
@@ -213,6 +240,12 @@ export default {
     },
     d_closeSparkSql() {
       this.d_sparksql = false;
+    },
+    d_openDonone() {
+      this.d_donone = true;
+    },
+    d_closeDonone() {
+      this.d_donone = false;
     },
     openIh() {
       this.in_hospital = true;

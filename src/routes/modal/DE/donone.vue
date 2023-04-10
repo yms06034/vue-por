@@ -9,14 +9,14 @@
         <div class="modal_content">
           <div class="page-title">
             <p class="title">
-              StartupsPlace Project
+              ETL PIPELINE PROJECT (Airflow)
             </p>
             <p class="sub_title">
-              키워드 하나로 찾는 신규 창업자를 위한 창업 관련 DATA &amp; DashBorad 개발
+              실제 쇼핑몰 데이터 Airflow를 활용해 Pipeline으로 처리한 프로젝트
             </p>
             <a
               class="github_link" 
-              href="https://github.com/yms06034/StartupsPlace">
+              href="https://github.com/yms06034/Donone_PROJECT">
               GIBHUB
             </a>
           </div>
@@ -26,36 +26,47 @@
                 Description
               </p>
               <hr style="width: 100%; border-top:1px solid rgba(0, 0, 0, .1);" />
-              <p>본 프로젝트는 신규 창업자를 위해 원하는 창업 관련 키워드 하나로 찾는 정보 사이트 입니다.</p>
+              <p>본 프로젝트는 실제 운영 되고 있는 쇼핑몰들의 데이터를 가져와 운영자가 한 눈에 볼 수 있게 끔 DashBorad를 보여줍니다.</p>
               <br />
-              - 코로나 시대가 끝나갈 무렵 다시 일상의 활기를 찾고 있는 시대가 천천히 찾아 오고 있습니다.<br />
-              - 다시 창업을 하는 사람들이 많아지고 있고, 또한 무인가게도 많이 늘어났습니다.<br />
-              - 그렇기에 창업 관련 정보를 한 사이트에서 편리하게 볼 수 있도록 개발 한 사이트 입니다.<br /> <br /><br />
+              <strong>기획 동기 및 의도</strong>ETLgit
+              <li>데이터 분석 환경 구축의 필요성 → 데이터 분석을 통한 매출 증대 목표</li>
+              <li style="margin-left: 20px;">
+                분산되어있는 데이터
+              </li>
+              <li style="margin-left: 20px;">
+                주요 지표 파악의 어려움
+              </li>
+              <li style="margin-left: 20px;">
+                고객 데이터 수집 불가
+              </li>
+              <li>데이터 파이프라인 구축</li>
+              <li style="margin-left: 20px;">
+                분산되어있는 데이터를 하나의 DB에 적재한 뒤, 한 테이블에 플랫폼 별 주문 데이터 통합
+              </li>
+              <br />
               <p class="snd_title">
                 Service INFO
               </p>
               <hr style="width: 100%; border-top:1px solid rgba(0, 0, 0, .1);" />
-              <strong><li>지역 별 프렌차이즈 정보</li></strong>
-              <img
-                class="content_img"
-                src="https://user-images.githubusercontent.com/98085184/230846334-1d385242-e41b-459b-95d6-99f66f88fdbb.gif"
-                alt="img" />
-              <p>
-                위 페이지의 자세한 코드는 <a
-                  class="link"
-                  href="https://github.com/yms06034/StartupsPlace/blob/master/startupsplace/routes/chart_route.py">여기</a>에서 확인 가능합니다.
-              </p>
-              <strong><li>키워드에 따른 창업정보 페이지</li></strong>
+              <p>실제 기업의 각 플랫폼 별 데이터를 수집 및 분석하여 사업자가 활용할 수 있는 대시보드 제작 및 배포</p>
+              <strong><li>데이터</li></strong>
+              <li style="margin-left: 20px;">
+                H-log 쇼핑몰의 각 플랫폼 별 데이터(cafe24, 스마트스토어, 에이블리)
+              </li>
+              <li style="margin-left: 20px;">
+                사용자의 로그분석을 위해 GA를 연동한 데이터
+              </li>
+              <p></p>
+              <strong><li>USE TECH</li></strong>
+              <li style="margin-left: 20px;">
+                Python, Django, Selenium, AWS, Tableau, Chart.js, Airflow
+              </li>
               <br />
+              <strong><li>DashBorad 구현 페이지</li></strong>
+              <p></p>
               <img
-                src="https://user-images.githubusercontent.com/98085184/230844648-fbe65c20-e20c-4700-8722-7b7cff364e42.gif"
+                src="~assets/project/DE/donone_gif.gif"
                 alt="startupsplace" />
-              <p style="margin-top: 10px"></p>
-              <p>
-                위 페이지의 자세한 코드는 <a
-                  class="link"
-                  href="https://github.com/yms06034/StartupsPlace/blob/master/startupsplace/routes/query_route.py">여기</a>에서 확인 가능합니다.
-              </p>
               <br /><br />
               <p class="snd_title">
                 Pipeline
@@ -63,9 +74,9 @@
               <hr style="width: 100%; border-top:1px solid rgba(0, 0, 0, .1);" />              
               <img
                 class="content_img"
-                src="https://user-images.githubusercontent.com/98085184/230840969-bb3e6f8b-37d2-4d0e-9358-cf539796e16a.png"
+                src="https://user-images.githubusercontent.com/98085184/230866641-feae6ecb-80ea-4509-8bea-e99c7b0466b2.png"
                 alt="pipeline" />
-              <p>네이버, 카카오, 구글의 API를 가져와 데이터 전처리 후 DB에 담아주고 Flask로 넘겨주었습니다.</p>
+              <p>Airflow 오케스트라 환경에서 API를 개발해 크롤링 진행 후 데이터 전처리 이후 RDS에 저장 해주었습니다.</p>
               <br />
               <p class="snd_title">
                 Read more
@@ -74,7 +85,7 @@
               <p>
                 The source code of the project are of course on <a
                   class="link"
-                  href="https://github.com/yms06034/StartupsPlace">Github.</a>
+                  href="https://github.com/yms06034/Donone_PROJECT">Github.</a>
               </p>
             </div>
           </div>
