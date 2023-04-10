@@ -9,14 +9,14 @@
         <div class="modal_content">
           <div class="page-title">
             <p class="title">
-              ETL PIPELINE PROJECT (Airflow)
+              Delivery Predicting System
             </p>
             <p class="sub_title">
-              실제 쇼핑몰 데이터 Airflow를 활용해 Pipeline으로 처리한 프로젝트
+              E-commerce 배송 Data를 활용한 정시 배송 예측 시스템 입니다.
             </p>
             <a
               class="github_link" 
-              href="https://github.com/yms06034/Donone_PROJECT">
+              href="https://github.com/yms06034/Delivery-Predicting-System">
               GIBHUB
             </a>
           </div>
@@ -26,58 +26,28 @@
                 Description
               </p>
               <hr style="width: 100%; border-top:1px solid rgba(0, 0, 0, .1);" />
-              <p>본 프로젝트는 실제 운영 되고 있는 쇼핑몰들의 데이터를 가져와 운영자가 한 눈에 볼 수 있게 끔 DashBorad를 보여줍니다.</p>
-              <br />
-              <strong>기획 동기 및 의도</strong>
-              <li>데이터 분석 환경 구축의 필요성 → 데이터 분석을 통한 매출 증대 목표</li>
-              <li style="margin-left: 20px;">
-                분산되어있는 데이터
-              </li>
-              <li style="margin-left: 20px;">
-                주요 지표 파악의 어려움
-              </li>
-              <li style="margin-left: 20px;">
-                고객 데이터 수집 불가
-              </li>
-              <li>데이터 파이프라인 구축</li>
-              <li style="margin-left: 20px;">
-                분산되어있는 데이터를 하나의 DB에 적재한 뒤, 한 테이블에 플랫폼 별 주문 데이터 통합
-              </li>
-              <br />
-              <p class="snd_title">
-                Service INFO
-              </p>
-              <hr style="width: 100%; border-top:1px solid rgba(0, 0, 0, .1);" />
-              <p>실제 기업의 각 플랫폼 별 데이터를 수집 및 분석하여 사업자가 활용할 수 있는 대시보드 제작 및 배포</p>
-              <strong><li>데이터</li></strong>
-              <li style="margin-left: 20px;">
-                H-log 쇼핑몰의 각 플랫폼 별 데이터(cafe24, 스마트스토어, 에이블리)
-              </li>
-              <li style="margin-left: 20px;">
-                사용자의 로그분석을 위해 GA를 연동한 데이터
-              </li>
+              <p>본 프로젝트는 MIMIC-III 데이터를 사용해 중환자실에 입원한 심부전 환자들의 사망 여부 예측 프로젝트입니다.</p>
+              <p>결측치와 이상치에 대해 분석을 진행하고 사망자와 생존자간에 차이점을 찾아냅니다.</p>
               <p></p>
-              <strong><li>USE TECH</li></strong>
-              <li style="margin-left: 20px;">
-                Python, Django, Selenium, AWS, Tableau, Chart.js, Airflow
-              </li>
-              <br />
-              <strong><li>DashBorad 구현 페이지</li></strong>
-              <p></p>
+              <p>K근접 이웃, 로지스틱 회귀, LightGBM, 로지스틱 회귀와 LightGBM을 <strong>Soft Voting</strong>을 통해 합친 모델로 각각 학습 후 성능을 테스트했습니다. 가장 성능이 좋았던 Soft Voting 모델로 최종 학습 후 모델이 판단한 생존과 사망에 중요한 특성들을 나타냈습니다.</p>
               <img
-                src="~assets/project/DE/donone_gif.gif"
-                alt="startupsplace" />
-              <br /><br />
+                class="content_img"
+                src="https://user-images.githubusercontent.com/94027045/220046798-3515271d-b274-45e2-b829-cc07f091d434.png"
+                alt="kobert" />
+              <p>
+                분석 및 예측에 대한 결과는 제 <a
+                  class="link"
+                  href="https://github.com/yms06034/Delivery-Predicting-System/blob/master/PROJECT_ML.ipynb">Repositories</a>에서 확인 할 수 있습니다.
+              </p>
+              <br />
               <p class="snd_title">
-                Pipeline
+                PDP Chart
               </p>
               <hr style="width: 100%; border-top:1px solid rgba(0, 0, 0, .1);" />              
               <img
                 class="content_img"
-                src="https://user-images.githubusercontent.com/98085184/230866641-feae6ecb-80ea-4509-8bea-e99c7b0466b2.png"
+                src="https://user-images.githubusercontent.com/94027045/220046220-fe443145-3a1f-4885-bcb1-dc181ab0c472.png"
                 alt="pipeline" />
-              <p>Airflow 오케스트라 환경에서 API를 개발해 크롤링 진행 후 데이터 전처리 이후 RDS에 저장 해주었습니다.</p>
-              <br />
               <p class="snd_title">
                 Read more
               </p>
@@ -85,7 +55,7 @@
               <p>
                 The source code of the project are of course on <a
                   class="link"
-                  href="https://github.com/yms06034/Donone_PROJECT">Github.</a>
+                  href="https://github.com/yms06034/Delivery-Predicting-System">Github.</a>
               </p>
             </div>
           </div>
@@ -230,8 +200,8 @@ $font : 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
           .content_img {
             margin-top: 30px;
             margin-bottom: 30px;
-            width: 95%;
-            height: 95%;
+            width: 100%;
+            height: 100%;
           }
         }
       }

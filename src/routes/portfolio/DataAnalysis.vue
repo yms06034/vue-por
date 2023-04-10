@@ -4,6 +4,31 @@
   </p>
   <div class="container">
     <div class="content">
+      <!-- ML XGBOOST Project -->
+      <div class="item">
+        <figure class="img_area">
+          <a 
+            style="cursor:pointer;"
+            @click="openDelivery">
+            <img
+              class="img_img"
+              src="~assets/project/DA/delivery_pred.png"
+              alt="project" />
+            <div class="text_box">
+              <a class="sub_text">
+                Delivery Predicting System
+              </a>
+              <hr style="width: 100%; border-top:1px solid rgba(255, 255, 255, .9);" />
+              <p style="color:#ffffff;">E-commerce 배송 Data를 활용한 정시 배송 예측 시스템 입니다.</p>
+            </div>
+          </a>
+          <Delivery 
+            @click="closeDelivery"
+            v-if="delivery" />
+        </figure>
+      </div>
+
+
       <!-- Kobert Project -->
       <div class="item">
         <figure class="img_area">
@@ -86,18 +111,21 @@
 import Kobert from "../modal/DA/kobert_class";
 import Vgame2 from '../modal/DA/vgame2';
 import Inhospotal from "../modal/DA/in_hospital"
+import Delivery from '../modal/DA/delivery_pred';
 
 export default {
   components: {
     Kobert,
     Vgame2,
-    Inhospotal
+    Inhospotal,
+    Delivery
   },
   data() {
     return {
       kobert: false,
       vgame: false,
       in_hospital: false,
+      delivery: false,
     }
   },
   methods: {
@@ -118,6 +146,12 @@ export default {
     },
     closeIh() {
       this.vgame = false;
+    },
+    openDelivery() {
+      this.delivery = true;
+    },
+    closeDelivery() {
+      this.delivery = false;
     },
   }
 }

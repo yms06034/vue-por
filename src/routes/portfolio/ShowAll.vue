@@ -4,7 +4,30 @@
   </p>
   <div class="container">
     <div class="content">
-      <!-- DATA ENGINEER PROEJECT -->
+      <!-- ML XGBOOST Project -->
+      <div class="item">
+        <figure class="img_area">
+          <a 
+            style="cursor:pointer;"
+            @click="openDelivery">
+            <img
+              class="img_img"
+              src="~assets/project/DA/delivery_pred.png"
+              alt="project" />
+            <div class="text_box">
+              <a class="sub_text">
+                Delivery Predicting System
+              </a>
+              <hr style="width: 100%; border-top:1px solid rgba(255, 255, 255, .9);" />
+              <p style="color:#ffffff;">E-commerce 배송 Data를 활용한 정시 배송 예측 시스템 입니다.</p>
+            </div>
+          </a>
+          <Delivery 
+            @click="closeDelivery"
+            v-if="delivery" />
+        </figure>
+      </div>
+
       <!-- Donone Project -->
       <div class="item">
         <figure class="img_area">
@@ -77,9 +100,6 @@
         </figure>
       </div>
 
-
-
-      <!-- DATA ANALYSIS PROEJECT -->
       <!-- Kobert Project -->
       <div class="item">
         <figure class="img_area">
@@ -153,9 +173,6 @@
         </figure>
       </div>
 
-
-
-      <!-- BACKEND PROEJECT -->
       <!-- startupsplace -->
       <div class="item">
         <figure class="img_area">
@@ -192,6 +209,7 @@ import Donone from '..//modal/DE/donone';
 import Kobert from "../modal/DA/kobert_class";
 import Vgame2 from "../modal/DA/vgame2";
 import Inhospotal from "../modal/DA/in_hospital";
+import Delivery from '../modal/DA/delivery_pred'
 // BACK
 import Startupsplace from "../modal/BACK/startupsplace"
 
@@ -204,6 +222,7 @@ export default {
     DSparkSQL,
     Startupsplace,
     Donone,
+    Delivery,
   },
   data() {
     return {
@@ -214,6 +233,7 @@ export default {
       in_hospital: false,
       b_startupspalce: false,
       d_donone: false,
+      delivery: false,
     }
   },
   methods: {
@@ -258,6 +278,12 @@ export default {
     },
     b_closeStartups() {
       this.b_startupspalce = false;
+    },
+    openDelivery() {
+      this.delivery = true;
+    },
+    closeDelivery() {
+      this.delivery = false;
     },
   }
 }
