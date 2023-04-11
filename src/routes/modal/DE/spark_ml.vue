@@ -9,14 +9,14 @@
         <div class="modal_content">
           <div class="page-title">
             <p class="title">
-              Delivery Predicting System
+              Spark_ML (ALS Model)
             </p>
             <p class="sub_title">
-              E-commerce 배송 Data를 활용한 정시 배송 예측 시스템 입니다.
+              artist recommendation system for spark mllib 
             </p>
             <a
               class="github_link" 
-              href="https://github.com/yms06034/Delivery-Predicting-System">
+              href="https://github.com/yms06034/artist-recommendation-system-for-spark-mllib">
               GIBHUB
             </a>
           </div>
@@ -26,37 +26,41 @@
                 Description
               </p>
               <hr style="width: 100%; border-top:1px solid rgba(0, 0, 0, .1);" />
-              <p>해외 Shopping Data를 활용해 정시 배송 예측을 하는 프로젝트 입니다.</p>
-              <p>결측치와 이상치에 대해 분석을 진행하고 정의한 가설을 확인합니다.</p>
-              <p></p>
-              <p> XGBoost 모델을 사용해 예측을 하였으며, SelectKBest를 적용해 Features 이전 모델과 비교하여 최종 모델을 선택하였습니다.</p>
-              <img
-                class="content_img"
-                src="https://user-images.githubusercontent.com/98085184/231072990-cdc256eb-832c-4cc6-8e61-12961b5dd25c.png"
-                alt="img" />
+              <p>본 프로젝트는 Spark Mllib를 활용해 Music Artist Recommendation System을 구축 하였습니다.</p>
               <p>
-                분석 및 예측에 대한 결과는 제 <a
+                프로젝트의 자세한 내용은 제 <a
                   class="link"
-                  href="https://github.com/yms06034/Delivery-Predicting-System/blob/master/PROJECT_ML.ipynb">Repositories</a>에서 확인 할 수 있습니다.
+                  href="https://github.com/yms06034/artist-recommendation-system-for-spark-mllib/blob/master/Spark_ML_by%20ALS.zpln">Repositories</a>에서 확인 할 수 있습니다.
               </p>
+              <br />
+              <ul>
+                <strong>Music Listening Dataset</strong>
+              </ul>
+              <li>user_artist_data.txt</li>
+              <li style="margin-left: 15px">
+                3 columns: userid artistid playcount
+              </li>
+              <li>artist_data.txt</li>
+              <li style="margin-left: 15px">
+                2 columns: artistid artist_name
+              </li>
+              <li>artist_alias.txt</li>
+              <li style="margin-left: 15px">
+                2 columns: badid goodid
+              </li>
+              <br />
+              <p>먼저 HDFS에 데이터를 업로드 후 데이터 분석 및 전처리를 진행해 주었습니다.</p>
+              <p>이후 Cassandra에 최종 데이터를 담아 주었고, ALS 모델을 활용해 학습해 준 뒤, RMSE로 평가 진행 후 CrossValidator 등을 진행 한 후 Best Model을 추출하여 HDFS에 저장해 주었습니다.</p>
+              <p>최종적으로 추천 된 내용을 Redis에 담아 주었습니다.</p>
               <br />
               <p class="snd_title">
-                DATA
+                Pipelin
               </p>
-              <hr style="width: 100%; border-top:1px solid rgba(0, 0, 0, .1);" />              
-              <li>ID: ID Number of Customers.</li>
-              <li>Warehouse block: The Company have big Warehouse which is divided in to block such as A,B,C,D,E.</li>
-              <li>Mode of shipment:The Company Ships the products in multiple way such as Ship, Flight and Road.</li>
-              <li>Customer care calls: The number of calls made from enquiry for enquiry of the shipment.</li>
-              <li>Customer rating: The company has rated from every customer. 1 is the lowest (Worst), 5 is the highest (Best).</li>
-              <li>Cost of the product: Cost of the Product in US Dollars.</li>
-              <li>Prior purchases: The Number of Prior Purchase.</li>
-              <li>Product importance: The company has categorized the product in the various parameter such as low, medium, high.</li>
-              <li>Gender: Male and Female.</li>
-              <li>Discount offered: Discount offered on that specific product.</li>
-              <li>Weight in gms: It is the weight in grams.</li>
-              <li>Reached on time: It is the target variable, where 1 Indicates that the product has NOT reached on time and 0 indicates it has reached on time.</li>
-              <br />
+              <hr style="width: 100%; border-top:1px solid rgba(0, 0, 0, .1);" />
+              <img
+                class="content_img"
+                src="https://user-images.githubusercontent.com/98085184/231084137-dbeca82a-8d46-40c8-a03e-2a8abe484c54.png"
+                alt="pipelin" />
               <p class="snd_title">
                 Read more
               </p>
@@ -64,7 +68,7 @@
               <p>
                 The source code of the project are of course on <a
                   class="link"
-                  href="https://github.com/yms06034/Delivery-Predicting-System">Github.</a>
+                  href="https://github.com/yms06034/artist-recommendation-system-for-spark-mllib">Github.</a>
               </p>
             </div>
           </div>

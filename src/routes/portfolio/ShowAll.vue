@@ -9,6 +9,31 @@
         <figure class="img_area">
           <a 
             style="cursor:pointer;"
+            @click="openSparkml">
+            <img
+              class="img_img"
+              src="~assets/project/DE/spark_ml.png"
+              alt="project" />
+            <div class="text_box">
+              <a class="sub_text">
+                Artist Recommendation System (Spark ML)
+              </a>
+              <hr style="width: 100%; border-top:1px solid rgba(255, 255, 255, .9);" />
+              <p style="color:#ffffff;">Spark Mllib를 활용해 Music Artist Recommendation System</p>
+            </div>
+          </a>
+          <Sparkml 
+            @click="closeSparkml"
+            v-if="sparkml" />
+        </figure>
+      </div>
+
+
+      <!-- ML XGBOOST Project -->
+      <div class="item">
+        <figure class="img_area">
+          <a 
+            style="cursor:pointer;"
             @click="openDelivery">
             <img
               class="img_img"
@@ -204,7 +229,8 @@
 // DE
 import DFirststep from "../modal/BACK/firststep";
 import DSparkSQL from "../modal/DE/spark_sql";
-import Donone from '..//modal/DE/donone';
+import Donone from '../modal/DE/donone';
+import Sparkml from '../modal/DE/spark_ml'
 // DA
 import Kobert from "../modal/DA/kobert_class";
 import Vgame2 from "../modal/DA/vgame2";
@@ -223,6 +249,7 @@ export default {
     Startupsplace,
     Donone,
     Delivery,
+    Sparkml,
   },
   data() {
     return {
@@ -234,6 +261,7 @@ export default {
       b_startupspalce: false,
       d_donone: false,
       delivery: false,
+      sparkml: false,
     }
   },
   methods: {
@@ -284,6 +312,12 @@ export default {
     },
     closeDelivery() {
       this.delivery = false;
+    },
+    openSparkml() {
+      this.sparkml = true;
+    },
+    closeSparkml() {
+      this.sparkml = false;
     },
   }
 }

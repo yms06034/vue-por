@@ -9,6 +9,31 @@
         <figure class="img_area">
           <a 
             style="cursor:pointer;"
+            @click="d_openSparkml">
+            <img
+              class="img_img"
+              src="~assets/project/DE/spark_ml.png"
+              alt="project" />
+            <div class="text_box">
+              <a class="sub_text">
+                Artist Recommendation System (Spark ML)
+              </a>
+              <hr style="width: 100%; border-top:1px solid rgba(255, 255, 255, .9);" />
+              <p style="color:#ffffff;">Spark Mllib를 활용해 Music Artist Recommendation System</p>
+            </div>
+          </a>
+          <Sparkml 
+            @click="d_closeSparkml"
+            v-if="d_sparkml" />
+        </figure>
+      </div>
+
+
+      <!-- Donone Project -->
+      <div class="item">
+        <figure class="img_area">
+          <a 
+            style="cursor:pointer;"
             @click="d_openDonone">
             <img
               class="img_img"
@@ -111,6 +136,7 @@ import Firststep from "../modal/BACK/firststep";
 import DSparkSQL from "../modal/DE/spark_sql";
 import Sparkupsplace from "../modal/BACK/startupsplace";
 import Donone from '../modal/DE/donone';
+import Sparkml from '../modal/DE/spark_ml'
 
 export default {
   components: {
@@ -118,6 +144,7 @@ export default {
     DSparkSQL,
     Sparkupsplace,
     Donone,
+    Sparkml,
   },
   data() {
     return {
@@ -125,6 +152,7 @@ export default {
       d_sparksql: false,
       d_startupspalce: false,
       d_donone: false,
+      d_sparkml: false,
     }
   },
   methods: {
@@ -150,6 +178,12 @@ export default {
       this.d_donone = true;
     },
     d_closeDonone() {
+      this.d_donone = false;
+    },
+    d_openSparkml() {
+      this.d_donone = true;
+    },
+    d_closeSparkml() {
       this.d_donone = false;
     },
     }
