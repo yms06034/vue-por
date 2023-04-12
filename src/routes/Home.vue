@@ -125,7 +125,7 @@
             </a>
           </li>
           <li class="img_li">
-            <a href="https://www.notion.so/KimSungJin-Resume-d9fa05dbf9854b60b048267f55e56f53">
+            <a href="https://woozy-trader-79d.notion.site/KimSungJin-Resume-d9fa05dbf9854b60b048267f55e56f53">
               <img
                 class="img"
                 src="~assets/notion.png"
@@ -201,7 +201,7 @@
           <div class="btn_area">
             <a
               class="bb-bbtn"
-              href="https://www.notion.so/KimSungJin-Resume-d9fa05dbf9854b60b048267f55e56f53">RESUME</a>
+              href="https://woozy-trader-79d.notion.site/KimSungJin-Resume-d9fa05dbf9854b60b048267f55e56f53">RESUME</a>
             <a
               class="bbtn"
               href="https://github.com/yms06034">GITHUB</a>
@@ -339,6 +339,7 @@
       </div>
     </div>
   </section>
+  <!-- CONTACT AREA -->
   <section 
     ref="contact"
     class="content_section">
@@ -365,7 +366,7 @@
         <div class="btn_area">
           <a
             class="bb-bbtn"
-            href="https://www.notion.so/KimSungJin-Resume-d9fa05dbf9854b60b048267f55e56f53">RESUME</a>
+            href="https://woozy-trader-79d.notion.site/KimSungJin-Resume-d9fa05dbf9854b60b048267f55e56f53">RESUME</a>
           <a
             class="bbtn"
             href="https://github.com/yms06034">GITHUB</a>
@@ -376,6 +377,29 @@
       </div>
     </div>
   </section>
+  <!-- SCROLL TOP BTN -->
+  <div
+    v-show="scY">
+    <button
+      class="scroll_top_btn"
+      @click="toTopBtn">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 511.999 511.999"
+        style="enable-background:new 0 0 511.999 511.999"
+        xml:space="preserve"><path
+          transform="rotate(-134.999 167.189 174.56)"
+          style="fill:#a5f2e5"
+          d="M120.885 112.176h92.607v124.766h-92.607z" /><path d="M149.836 269.347c1.651 1.652 3.816 2.477 5.98 2.477s4.329-.825 5.98-2.477L256 175.143l94.204 94.204a8.463 8.463 0 0 0 11.962 0l77.441-77.441a8.455 8.455 0 0 0 0-11.959l-43.308-43.308a8.456 8.456 0 0 0-11.96 0 8.455 8.455 0 0 0 0 11.959l37.329 37.329-65.481 65.481-165.514-165.51 65.481-65.481 85.33 85.33a8.456 8.456 0 0 0 11.96 0 8.456 8.456 0 0 0 0-11.96l-91.309-91.31A8.463 8.463 0 0 0 256.154 0c-.052 0-.104.007-.156.008-.051-.001-.102-.008-.155-.008a8.459 8.459 0 0 0-5.98 2.477L72.394 179.946a8.457 8.457 0 0 0 0 11.96l77.442 77.441zm28.721-171.644 65.482 65.481-88.224 88.224-65.482-65.481 88.224-88.224z" /><path
+            style="fill:#62d9c7"
+            d="m341.484 105.746-85.33-85.33-65.481 65.482 165.51 165.509 65.481-65.481-37.329-37.329a8.455 8.455 0 0 1 0-11.959l-30.891-30.891a8.455 8.455 0 0 1-11.96-.001z" /><path
+              transform="rotate(-134.999 167.186 414.732)"
+              style="fill:#a5f2e5"
+              d="M120.882 352.346h92.607v124.766h-92.607z" /><path
+                style="fill:#62d9c7"
+                d="m341.484 345.922-85.33-85.33-65.481 65.481 165.51 165.509 65.481-65.481-37.329-37.329a8.455 8.455 0 0 1 0-11.959l-30.891-30.891a8.456 8.456 0 0 1-11.96 0z" /><path d="M396.296 376.813a8.456 8.456 0 0 0-11.96 0 8.456 8.456 0 0 0 0 11.96l37.329 37.329-65.481 65.481-165.51-165.51 65.481-65.481 85.33 85.33a8.456 8.456 0 0 0 11.96 0 8.455 8.455 0 0 0 0-11.959l-91.31-91.309a8.463 8.463 0 0 0-5.981-2.477c-.052 0-.104.007-.156.008-.052-.001-.104-.008-.156-.008a8.459 8.459 0 0 0-5.98 2.477L72.394 420.121a8.457 8.457 0 0 0 0 11.96l77.441 77.441c1.651 1.652 3.816 2.477 5.98 2.477s4.329-.825 5.98-2.477l94.204-94.204 94.204 94.204a8.463 8.463 0 0 0 11.962 0l77.441-77.441a8.455 8.455 0 0 0 0-11.959l-43.31-43.309zm-217.739-38.935 65.482 65.481-88.224 88.224-65.482-65.481 88.224-88.224z" /></svg>
+    </button>
+  </div>
 </template>
 
 <script setup>
@@ -405,7 +429,9 @@ export default {
     porShowAll,
     porDataEngineer,
     porDataAnalysis,
-    porBackend
+    porBackend,
+    BackModal,
+    Modal
   },
   data() {
     return {
@@ -431,9 +457,28 @@ export default {
       DataEngineer: false,
       DataAnalysis: false,
       Backend: false,
+      scY: 0,
+      scrollTimer: 0,
     };
   },
+  mounted() {
+    window.addEventListener('scroll', this.handleScroll);
+  },
   methods: {
+    handleScroll() {
+      if (this.scrollTimer) return;
+      this.scrollTimer = setTimeout(() => {
+        this.scY = window.scrollY;
+        clearTimeout(this.scrollTimer);
+        this.scrollTimer = 0
+      }, 200);
+    },
+    toTopBtn() {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+      });
+    },
     scrollVisit() {
       const _this = this;
       _this.$refs.visit.scrollIntoView({ behavior: "smooth" });
@@ -502,6 +547,7 @@ export default {
       this.DataAnalysis = false;
       this.Backend = true;
     },
+
   }
 }
 </script>
@@ -902,5 +948,17 @@ header {
       }
     }
   }
+}
+.scroll_top_btn {
+  z-index: 3000;
+  position: fixed;
+  right: 30px;
+  bottom: 40px;
+  cursor: pointer;
+  border-radius: 10px;
+  border: 2px solid $primary;
+  width: 60px;
+  height: 60px;
+  background: none;
 }
 </style>
