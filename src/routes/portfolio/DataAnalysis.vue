@@ -145,7 +145,7 @@ export default {
       this.in_hospital = true;
     },
     closeIh() {
-      this.vgame = false;
+      this.in_hospital = false;
     },
     openDelivery() {
       this.delivery = true;

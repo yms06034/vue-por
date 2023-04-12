@@ -125,7 +125,7 @@
             </a>
           </li>
           <li class="img_li">
-            <a href="javascript:void(0)">
+            <a href="https://www.notion.so/KimSungJin-Resume-d9fa05dbf9854b60b048267f55e56f53">
               <img
                 class="img"
                 src="~assets/notion.png"
@@ -186,13 +186,13 @@
         <div class="img_area">
           <img
             class="img"
-            src="~assets/github.png"
+            src="~assets/Avatar-Maker.png"
             alt="profile" />
         </div>
         <div class="text_area">
           <p>안녕하세요, 저는 연주하는 개발자 김성진입니다.</p>
           <p>
-            Data Analytics를 시작으로 Data에 관심이 생겨 Backend 개발에 대한 경험을 쌓기 시작했습니다.
+            Data Analytics를 시작으로 Data에 대해 많이 배웠습니다.
             <br /> Data에 대한 이해와 왜 DataDriven이 시장에서 각광을 받는지에 대해 배우게 되었습니다.
           </p>
           <p>
@@ -201,7 +201,7 @@
           <div class="btn_area">
             <a
               class="bb-bbtn"
-              href="javascript:void(0)">RESUME</a>
+              href="https://www.notion.so/KimSungJin-Resume-d9fa05dbf9854b60b048267f55e56f53">RESUME</a>
             <a
               class="bbtn"
               href="https://github.com/yms06034">GITHUB</a>
@@ -365,7 +365,7 @@
         <div class="btn_area">
           <a
             class="bb-bbtn"
-            href="javascript:void(0)">RESUME</a>
+            href="https://www.notion.so/KimSungJin-Resume-d9fa05dbf9854b60b048267f55e56f53">RESUME</a>
           <a
             class="bbtn"
             href="https://github.com/yms06034">GITHUB</a>
@@ -685,6 +685,7 @@ header {
         text-align: left;
         max-width: 66.666667%;
         .btn_area {
+          margin-top: 15px;
           font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
           padding-top: 10px;
           .bb-bbtn {
