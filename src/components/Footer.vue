@@ -6,6 +6,7 @@
       </p>
       <div class="contact_area">
         <a
+          target="_blank"
           class="img_a"
           href="https://github.com/yms06034">
           <img
@@ -13,6 +14,7 @@
             alt="github" />
         </a>
         <a
+          target="_blank"
           class="img_a"
           href="https://www.linkedin.com/in/sungjin-kim-7229ba259/">
           <img
@@ -20,13 +22,15 @@
             alt="github" />
         </a>
         <a
+          target="_blank"
           class="img_a"
-          href="">
+          href="https://balang.vercel.app/">
           <img
-            src="~assets/notion_w.png"
+            src="~assets/blog_w.png"
             alt="github" />
         </a>
         <a
+          target="_blank"
           class="img_a"
           href="mailto:yms06034@gmail.com">
           <img

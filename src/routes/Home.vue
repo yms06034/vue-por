@@ -109,7 +109,9 @@
         <hr class="top_hr" />
         <ul style="padding-top: 20px">
           <li class="img_li">
-            <a href="https://github.com/yms06034">
+            <a
+              target="_blank"
+              href="https://github.com/yms06034">
               <img
                 class="img"
                 src="~assets/github.png"
@@ -117,7 +119,9 @@
             </a>
           </li>
           <li class="img_li">
-            <a href="https://www.linkedin.com/in/sungjin-kim-7229ba259/">
+            <a
+              target="_blank"
+              href="https://www.linkedin.com/in/sungjin-kim-7229ba259/">
               <img
                 class="img"
                 src="~assets/linkedin.png"
@@ -125,10 +129,12 @@
             </a>
           </li>
           <li class="img_li">
-            <a href="https://woozy-trader-79d.notion.site/KimSungJin-Resume-d9fa05dbf9854b60b048267f55e56f53">
+            <a
+              target="_blank"
+              href="https://balang.vercel.app/">
               <img
                 class="img"
-                src="~assets/notion.png"
+                src="~assets/blog.png"
                 alt="notion" />
             </a>
           </li>
