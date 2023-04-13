@@ -9,28 +9,28 @@
           class="img_a"
           href="https://github.com/yms06034">
           <img
-            src="https://aib15-ksj.cf/github.2c59b925.png"
+            src="~assets/github_w.png"
             alt="github" />
         </a>
         <a
           class="img_a"
           href="https://www.linkedin.com/in/sungjin-kim-7229ba259/">
           <img
-            src="https://aib15-ksj.cf/linkedin.3aef5102.png"
+            src="~assets/linkedin_w.png"
             alt="github" />
         </a>
         <a
           class="img_a"
           href="">
           <img
-            src="https://aib15-ksj.cf/notion.4740dbd3.png"
+            src="~assets/notion_w.png"
             alt="github" />
         </a>
         <a
           class="img_a"
           href="mailto:yms06034@gmail.com">
           <img
-            src="https://aib15-ksj.cf/mail.d362bdff.png"
+            src="~assets/mail_w.png"
             alt="github" />
         </a>
       </div>
