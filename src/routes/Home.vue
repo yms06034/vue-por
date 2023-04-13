@@ -622,17 +622,26 @@ header {
       transform: translate(50%, -50%);
       max-width: 600px;
       padding: 2em 3em;
+      @media screen and (max-width: 850px) {
+        padding: 0;
+      }
       .text_area {
         p {
           display: inline;
           font-size: 35px;
           line-height: 1.75;
+        @media screen and (max-width: 650px) {
+        font-size: 25px;
+        }
         }
         .logo_img {
           width: 100px;
           height: auto;
           margin: 0 10px;
           margin-bottom: 20px;
+          @media screen and (max-width: 650px) {
+            width: 70px;
+          }
         }
         .top_hr {
           width: 100px;
@@ -696,6 +705,10 @@ header {
         }
         &:last-child {
           margin-right: 0;
+        }
+        @media screen and (max-width: 600px) {
+          padding: 7px 12px;
+          font-size: 15px;
         }
       }
     }
