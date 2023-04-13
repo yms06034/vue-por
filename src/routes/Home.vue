@@ -186,7 +186,7 @@
         <div class="img_area">
           <img
             class="img"
-            src="~assets/Avatar-Maker.png"
+            src="~assets/myCharacter.png"
             alt="profile" />
         </div>
         <div class="text_area">
@@ -571,6 +571,9 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 10px 0;
+    @media screen and (max-width: 1200px) {
+      padding: 0 25px;
+    }
     .Home {
       a {
         color: $primary;
