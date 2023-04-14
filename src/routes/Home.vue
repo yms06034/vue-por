@@ -207,7 +207,7 @@
           <div class="btn_area">
             <a
               class="bb-bbtn"
-              href="https://woozy-trader-79d.notion.site/KimSungJin-Resume-d9fa05dbf9854b60b048267f55e56f53">RESUME</a>
+              href="javascript:void(0)">RESUME</a>
             <a
               class="bbtn"
               href="https://github.com/yms06034">GITHUB</a>
@@ -372,7 +372,7 @@
         <div class="btn_area">
           <a
             class="bb-bbtn"
-            href="https://woozy-trader-79d.notion.site/KimSungJin-Resume-d9fa05dbf9854b60b048267f55e56f53">RESUME</a>
+            href="javascript:void(0)">RESUME</a>
           <a
             class="bbtn"
             href="https://github.com/yms06034">GITHUB</a>
