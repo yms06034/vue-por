@@ -181,10 +181,10 @@ export default {
       this.d_donone = false;
     },
     d_openSparkml() {
-      this.d_donone = true;
+      this.d_sparkml = true;
     },
     d_closeSparkml() {
-      this.d_donone = false;
+      this.d_sparkml = false;
     },
     }
 }
