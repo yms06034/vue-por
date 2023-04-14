@@ -638,6 +638,10 @@ header {
           line-height: 1.75;
         @media screen and (max-width: 650px) {
         font-size: 25px;
+        padding-right: 0 !important;
+        }
+        @media screen and (max-width: 415px) {
+          font-size: 22px;
         }
         }
         .logo_img {
@@ -648,6 +652,10 @@ header {
           @media screen and (max-width: 650px) {
             width: 70px;
           }
+          @media screen and (max-width: 415px) {
+          width: 60px;
+          margin: 0 5px;
+        }
         }
         .top_hr {
           width: 100px;
@@ -663,8 +671,14 @@ header {
           height: 50px;
           display: inline-block;
           margin-right: 15px;
+          @media screen and (max-width: 490px) {
+            margin-right: 5px;
+            width: 40px;
+            height: 40px;
+          }
           &:last-child {
             margin-right: 0;
+
           }
           .img {
             width: 100%;
@@ -711,10 +725,17 @@ header {
         }
         &:last-child {
           margin-right: 0;
+          margin-bottom: 0;
         }
         @media screen and (max-width: 600px) {
           padding: 7px 12px;
           font-size: 15px;
+        }
+        @media screen and (max-width: 410px) {
+          margin-right: 5px;
+        }
+        @media screen and (max-width: 380px) {
+          margin-bottom: 7px;
         }
       }
     }
@@ -740,11 +761,18 @@ header {
       flex-direction: row;
       justify-content: center;
       align-items: center;
+      @media screen and (max-width: 600px) {
+        flex-direction: column;
+      }
       .img_area {
         width: 250px;
         height: auto;
         margin-right: 70px;
         max-width: 33.333333%;
+        @media screen and (max-width: 600px) {
+        margin-right: 0;
+        margin-bottom: 20px;
+        }
         .img {
           width: 100%;
         }
@@ -764,6 +792,9 @@ header {
             background: $primary;
             margin-right: 15px;
             color: #fff;
+            @media screen and (max-width: 450px) {
+              margin-right: 5px;
+            }
             &:hover {
               color: $primary;
               background: #fff;
@@ -777,6 +808,9 @@ header {
             color: $primary;
             transition: all .2s;
             margin-right: 15px;
+            @media screen and (max-width: 450px) {
+              margin-right: 5px;
+            }
             &:hover {
               background: $primary;
               color: #fff;
@@ -815,12 +849,20 @@ header {
       justify-content: center;
       align-items: center;
       margin-top: 80px;
+      @media screen and (max-width:600px) {
+        flex-direction: column;
+      }
       .tents_p {
         display: flex;
         flex-direction: column;
         align-items: center;
         max-width: 28%;
         margin-right: 20px;
+        @media screen and (max-width: 600px) {
+          max-width: 50%;
+          margin-right: 0;
+          margin-bottom: 70px;
+        }
         .tents_img {
           width: 110px;
           height: auto;
