@@ -4,7 +4,31 @@
   </p>
   <div class="container">
     <div class="content">
-      <!-- Donone Project -->
+      <!-- RealClickstream analysis Project -->
+      <div class="item">
+        <figure class="img_area">
+          <a 
+            style="cursor:pointer;"
+            @click="openKafka">
+            <img
+              class="img_img"
+              src="~assets/project/DE/kafka.png"
+              alt="project" />
+            <div class="text_box">
+              <a class="sub_text">
+                Java ClickStream Analysis for Kafka, Flink
+              </a>
+              <hr style="width: 100%; border-top:1px solid rgba(255, 255, 255, .9);" />
+              <p style="color:#ffffff;">JAVA를 사용해 Log Data를 만들어 실시간 클릭 데이터를 대시보드로 넘기는 Pipeline 프로젝트</p>
+            </div>
+          </a>
+          <DKafka 
+            @click="closeKafka"
+            v-if="d_kafka" />
+        </figure>
+      </div>
+
+      <!-- SparkML Project -->
       <div class="item">
         <figure class="img_area">
           <a 
@@ -136,7 +160,8 @@ import Firststep from "../modal/BACK/firststep";
 import DSparkSQL from "../modal/DE/spark_sql";
 import Sparkupsplace from "../modal/BACK/startupsplace";
 import Donone from '../modal/DE/donone';
-import Sparkml from '../modal/DE/spark_ml'
+import Sparkml from '../modal/DE/spark_ml';
+import DKafka from '../modal/DE/kafka';
 
 export default {
   components: {
@@ -145,6 +170,7 @@ export default {
     Sparkupsplace,
     Donone,
     Sparkml,
+    DKafka,
   },
   data() {
     return {
@@ -153,6 +179,7 @@ export default {
       d_startupspalce: false,
       d_donone: false,
       d_sparkml: false,
+      d_kafka: false,
     }
   },
   methods: {
@@ -185,6 +212,12 @@ export default {
     },
     d_closeSparkml() {
       this.d_sparkml = false;
+    },
+    openKafka() {
+      this.d_kafka = true;
+    },
+    closeKafka() {
+      this.d_kafka = false;
     },
     }
 }
