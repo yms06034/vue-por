@@ -16,7 +16,7 @@
             </p>
             <a
               class="github_link" 
-              href="https://github.com/yms06034/Donone_PROJECT">
+              href="https://github.com/yms06034/clickstream-analytics">
               GIBHUB
             </a>
           </div>
