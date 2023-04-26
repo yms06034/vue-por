@@ -198,11 +198,12 @@
         <div class="text_area">
           <p>안녕하세요, 저는 연주하는 개발자 김성진입니다.</p>
           <p>
-            Data Analytics를 시작으로 Data에 대해 많이 배웠습니다.
-            <br /> Data에 대한 이해와 왜 DataDriven이 시장에서 각광을 받는지에 대해 배우게 되었습니다.
+            Data Analytics를 시작으로 Data에 관해 입문하였습니다.
+            <br />현재는 Data로 인해 굉장히 빠른 변화를 하고 있습니다. 이제는 <strong>네트워크 전</strong>이라는 말이 있듯이
+            Data가 우리에게 주는 힘은 대단하다고 생각합니다.
           </p>
           <p>
-            저는 Data에 대해 자연스럽게 호기심이 생기며 Data Enigneer을 위해 끊임없이 노력하고 있습니다.
+            저는 Data를 보면 자연스럽게 호기심이 생기며 Data Engineer를 위해 끊임없이 노력하고 있습니다.
           </p>
           <div class="btn_area">
             <a
@@ -573,7 +574,7 @@ header {
   left: 0;
   right: 0;
   background: #fff;
-  z-index: 3000;
+  z-index: 1;
   .header_area {
     margin: 0 auto;
     max-width: 1140px;

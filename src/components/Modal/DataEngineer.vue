@@ -125,7 +125,7 @@ $font : 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     transform: translate(-50%, -50%);
     top: 50%;
     left: 50%;
-    z-index: 2010;
+    z-index: 9999;
     .modal_content {
       position: relative;
       width: 100%;

@@ -48,6 +48,14 @@
               </li>
               <br />
               <p class="snd_title">
+                Pipelin
+              </p>
+              <hr style="width: 100%; border-top:1px solid rgba(0, 0, 0, .1);" />
+              <img
+                class="content_img"
+                src="~assets/project/DE/kafkaAndFlink.png"
+                alt="pipelin" />
+              <p class="snd_title">
                 Read more
               </p>
               <hr style="width: 100%; border-top:1px solid rgba(0, 0, 0, .1);" />
@@ -58,13 +66,6 @@
               </p>
             </div>
           </div>
-          <!-- <div class="page_close-btn">
-            <button
-              class="close_btn"
-              @click="$emit('close')">
-              CLOSE
-            </button>
-          </div> -->
         </div>
       </div>
     </div>
