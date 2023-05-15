@@ -131,11 +131,11 @@
           <li class="img_li">
             <a
               target="_blank"
-              href="https://balang.vercel.app/">
+              href="https://balang.tistory.com/">
               <img
                 class="img"
                 src="~assets/blog.png"
-                alt="notion" />
+                alt="blog" />
             </a>
           </li>
           <li class="img_li">

@@ -19,15 +19,15 @@
           href="https://www.linkedin.com/in/sungjin-kim-7229ba259/">
           <img
             src="~assets/linkedin_w.png"
-            alt="github" />
+            alt="linkedin" />
         </a>
         <a
           target="_blank"
           class="img_a"
-          href="https://balang.vercel.app/">
+          href="https://balang.tistory.com/">
           <img
             src="~assets/blog_w.png"
-            alt="github" />
+            alt="blog" />
         </a>
         <a
           target="_blank"
@@ -35,7 +35,7 @@
           href="mailto:yms06034@gmail.com">
           <img
             src="~assets/mail_w.png"
-            alt="github" />
+            alt="mail" />
         </a>
       </div>
     </div>
