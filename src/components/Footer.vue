@@ -13,14 +13,14 @@
             src="~assets/github_w.png"
             alt="github" />
         </a>
-        <a
+        <!-- <a
           target="_blank"
           class="img_a"
           href="https://www.linkedin.com/in/sungjin-kim-7229ba259/">
           <img
             src="~assets/linkedin_w.png"
             alt="linkedin" />
-        </a>
+        </a> -->
         <a
           target="_blank"
           class="img_a"

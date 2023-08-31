@@ -118,7 +118,7 @@
                 alt="github" />
             </a>
           </li>
-          <li class="img_li">
+          <!-- <li class="img_li">
             <a
               target="_blank"
               href="https://www.linkedin.com/in/sungjin-kim-7229ba259/">
@@ -127,7 +127,7 @@
                 src="~assets/linkedin.png"
                 alt="linkedin" />
             </a>
-          </li>
+          </li> -->
           <li class="img_li">
             <a
               target="_blank"
@@ -196,24 +196,28 @@
             alt="profile" />
         </div>
         <div class="text_area">
-          <p>안녕하세요, 저는 연주하는 개발자 김성진입니다.</p>
+          <p>안녕하세요, 저는 연주하는 개발자 김성진입니다.</p> 
           <p>
             Data Analytics를 시작으로 Data에 관해 입문하였습니다.
-            <br />현재는 Data로 인해 굉장히 빠른 변화를 하고 있습니다. 이제는 <strong>네트워크 전</strong>이라는 말이 있듯이
+            <br />현재는 Data로 인해 굉장히 빠른 변화를 하고 있습니다. 
+            <br />이제는 <strong>네트워크 전</strong>이라는 말이 있듯이
             Data가 우리에게 주는 힘은 대단하다고 생각합니다.
           </p>
           <p>
-            저는 Data를 보면 자연스럽게 호기심이 생기며 Data Engineer를 위해 끊임없이 노력하고 있습니다.
+            저는 Data를 보면 자연스럽게 호기심이 생기며 <strong>Data Engineer</strong>로 성장하기 위해 끊임없이 노력하고 있습니다.
           </p>
           <div class="btn_area">
+            <!-- <a
+              class="bb-bbtn"
+              target="_blank"
+              href="https://woozy-trader-79d.notion.site/KimSungJin-Resume-d9fa05dbf9854b60b048267f55e56f53">RESUME</a> -->
             <a
               class="bb-bbtn"
               target="_blank"
-              href="https://woozy-trader-79d.notion.site/KimSungJin-Resume-d9fa05dbf9854b60b048267f55e56f53">RESUME</a>
+              href="https://github.com/yms06034">GITHUB</a>
             <a
               class="bbtn"
-              target="_blank"
-              href="https://github.com/yms06034">GITHUB</a>
+              href="https://balang.tistory.com/">BLOG</a>
             <a
               class="bbtn"
               href="mailto:yms06034@gmail.com">MAIL</a>
@@ -359,7 +363,7 @@
         </div>
         <div class="summary">
           "우리는 모두 이 사실을 알고 있다.
-          계속 노력하면 성공할 수 있다는 걸 그 속도가 느릴지언정 <strong style="color:#ff8100;">'절대'</strong> 포기하지 말라, 목표는 보이는 것보다 가까이 있을 때가 있다.”
+          계속 노력하면 성공할 수 있다는 걸 그 속도가 느릴지언정 <strong style="color:#f02525;">'절대'</strong> 포기하지 말라, 목표는 보이는 것보다 가까이 있을 때가 있다.”
           <p class="sub_text">
             항상 이런 마음가짐으로 모든일에 최선을 다합니다.
           </p>
@@ -373,14 +377,17 @@
           </p>
         </div>
         <div class="btn_area">
-          <a
+          <!-- <a
             class="bb-bbtn"
             target="_blank"
-            href="https://woozy-trader-79d.notion.site/KimSungJin-Resume-d9fa05dbf9854b60b048267f55e56f53">RESUME</a>
+            href="https://woozy-trader-79d.notion.site/KimSungJin-Resume-d9fa05dbf9854b60b048267f55e56f53">RESUME</a> -->
           <a
             target="_blank"
-            class="bbtn"
+            class="bb-bbtn"
             href="https://github.com/yms06034">GITHUB</a>
+          <a
+            class="bbtn"
+            href="https://balang.tistory.com/">BLOG</a>
           <a
             class="bbtn"
             href="mailto:yms06034@gmail.com">MAIL</a>
@@ -637,6 +644,7 @@ header {
         padding: 0;
       }
       .text_area {
+        line-height: 1.75;
         p {
           display: inline;
           font-size: 35px;
@@ -785,6 +793,7 @@ header {
       .text_area {
         text-align: left;
         max-width: 66.666667%;
+        line-height: 1.75;
         .btn_area {
           margin-top: 15px;
           font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;

@@ -26,6 +26,7 @@
               <div class="content">
                 <p>Python</p>
                 <p>Scala</p>
+                <p>Java</p>
               </div>
             </div>
             <div class="text_area">
@@ -37,6 +38,7 @@
                 <p>Spark</p>
                 <p>Hadoop</p>
                 <p>Airflow</p>
+                <p>Flink</p>
                 <p>Selenium</p>
               </div>
             </div>
@@ -90,7 +92,7 @@ $font : 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 ::-webkit-scrollbar-track {
   background: #f1f1f1; 
 }
- 
+
 /* Handle */
 ::-webkit-scrollbar-thumb {
   background: #69b3a2; 
