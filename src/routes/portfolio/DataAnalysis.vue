@@ -4,6 +4,30 @@
   </p>
   <div class="container">
     <div class="content">
+      <!-- Yelp Review Recommendation -->
+      <div class="item">
+        <figure class="img_area">
+          <a 
+            style="cursor:pointer;"
+            @click="openYelp">
+            <img
+              class="img_img"
+              src="~assets/project/DA/yelp_review.png"
+              alt="project" />
+            <div class="text_box">
+              <a class="sub_text">
+                Yelp Review Recommendation
+              </a>
+              <hr style="width: 100%; border-top:1px solid rgba(255, 255, 255, .9);" />
+              <p style="color:#ffffff;">Yelp의 Review Data를 활용해 각 식당의들은 개선방안을 추천해주는 분석입니다.</p>
+            </div>
+          </a>
+          <Yelp 
+            @click="closeYelp"
+            v-if="yelp" />
+        </figure>
+      </div>
+
       <!-- ML XGBOOST Project -->
       <div class="item">
         <figure class="img_area">
@@ -112,13 +136,15 @@ import Kobert from "../modal/DA/kobert_class";
 import Vgame2 from '../modal/DA/vgame2';
 import Inhospotal from "../modal/DA/in_hospital"
 import Delivery from '../modal/DA/delivery_pred';
+import Yelp from '../modal/DA/yelp_review'
 
 export default {
   components: {
     Kobert,
     Vgame2,
     Inhospotal,
-    Delivery
+    Delivery,
+    Yelp,
   },
   data() {
     return {
@@ -126,6 +152,7 @@ export default {
       vgame: false,
       in_hospital: false,
       delivery: false,
+      yelp: false,
     }
   },
   methods: {
@@ -152,6 +179,12 @@ export default {
     },
     closeDelivery() {
       this.delivery = false;
+    },
+    openYelp() {
+      this.yelp = true;
+    },
+    closeYelp() {
+      this.yelp = false;
     },
   }
 }

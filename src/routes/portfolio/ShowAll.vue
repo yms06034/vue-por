@@ -4,6 +4,30 @@
   </p>
   <div class="container">
     <div class="content">
+      <!-- Yelp Review Recommendation -->
+      <div class="item">
+        <figure class="img_area">
+          <a 
+            style="cursor:pointer;"
+            @click="openYelp">
+            <img
+              class="img_img"
+              src="~assets/project/DA/yelp_review.png"
+              alt="project" />
+            <div class="text_box">
+              <a class="sub_text">
+                Yelp Review Recommendation
+              </a>
+              <hr style="width: 100%; border-top:1px solid rgba(255, 255, 255, .9);" />
+              <p style="color:#ffffff;">Yelp의 Review Data를 활용해 각 식당의들은 개선방안을 추천해주는 분석입니다.</p>
+            </div>
+          </a>
+          <Yelp 
+            @click="closeYelp"
+            v-if="yelp" />
+        </figure>
+      </div>
+
       <!-- Real Click Stream Analysis -->
       <div class="item">
         <figure class="img_area">
@@ -256,11 +280,14 @@ import DSparkSQL from "../modal/DE/spark_sql";
 import Donone from '../modal/DE/donone';
 import Sparkml from '../modal/DE/spark_ml';
 import DKafka from '../modal/DE/kafka';
+
 // DA
 import Kobert from "../modal/DA/kobert_class";
 import Vgame2 from "../modal/DA/vgame2";
 import Inhospotal from "../modal/DA/in_hospital";
 import Delivery from '../modal/DA/delivery_pred';
+import Yelp from '../modal/DA/yelp_review';
+
 // BACK
 import Startupsplace from "../modal/BACK/startupsplace";
 
@@ -276,6 +303,7 @@ export default {
     Delivery,
     Sparkml,
     DKafka,
+    Yelp,
   },
   data() {
     return {
@@ -289,6 +317,7 @@ export default {
       delivery: false,
       sparkml: false,
       d_kafka: false,
+      yelp: false,
     }
   },
   methods: {
@@ -351,6 +380,12 @@ export default {
     },
     closeKafka() {
       this.d_kafka = false;
+    },
+    openYelp() {
+      this.yelp = true;
+    },
+    closeYelp() {
+      this.yelp = false;
     },
   }
 }
