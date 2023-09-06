@@ -32,6 +32,14 @@
         <a
           target="_blank"
           class="img_a"
+          href="https://www.youtube.com/playlist?list=PLMEcO50qH7UziRtCK8Ocp41_B-qwtFVgg">
+          <img
+            src="~assets/youtube_w.png"
+            alt="youtube" />
+        </a>
+        <a
+          target="_blank"
+          class="img_a"
           href="mailto:yms06034@gmail.com">
           <img
             src="~assets/mail_w.png"

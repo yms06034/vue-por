@@ -139,6 +139,16 @@
             </a>
           </li>
           <li class="img_li">
+            <a
+              target="_blank" 
+              href="https://www.youtube.com/playlist?list=PLMEcO50qH7UziRtCK8Ocp41_B-qwtFVgg">
+              <img
+                class="img"
+                src="~assets/youtube.png"
+                alt="youtube" />
+            </a>
+          </li>
+          <li class="img_li">
             <a href="mailto:yms06034@gmail.com">
               <img
                 class="img"
@@ -217,7 +227,12 @@
               href="https://github.com/yms06034">GITHUB</a>
             <a
               class="bbtn"
+              target="_blank"
               href="https://balang.tistory.com/">BLOG</a>
+            <a
+              class="bbtn"
+              target="_blank"
+              href="https://www.youtube.com/playlist?list=PLMEcO50qH7UziRtCK8Ocp41_B-qwtFVgg">YOUTUBE</a>
             <a
               class="bbtn"
               href="mailto:yms06034@gmail.com">MAIL</a>
@@ -388,6 +403,9 @@
           <a
             class="bbtn"
             href="https://balang.tistory.com/">BLOG</a>
+          <a
+            class="bbtn"
+            href="https://www.youtube.com/playlist?list=PLMEcO50qH7UziRtCK8Ocp41_B-qwtFVgg">YOUTUBE</a>
           <a
             class="bbtn"
             href="mailto:yms06034@gmail.com">MAIL</a>

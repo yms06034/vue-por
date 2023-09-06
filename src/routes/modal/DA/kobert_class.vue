@@ -23,6 +23,16 @@
           <div class="page_content">
             <div class="description">
               <p class="snd_title">
+                Youtube
+              </p>
+              <hr style="width: 100%; border-top:1px solid rgba(0, 0, 0, .1);" />
+              <p style="margin-bottom: 40px;">
+                <a href="https://www.youtube.com/watch?v=K3b5ykx6h9E&list=PLMEcO50qH7UziRtCK8Ocp41_B-qwtFVgg&index=3&t=26s">
+                  프로젝트 유튜브 영상 링크 (클릭)<br />
+                  https://www.youtube.com/watch?v=K3b5ykx6h9E&list=PLMEcO50qH7UziRtCK8Ocp41_B-qwtFVgg&index=3&t=26s
+                </a>
+              </p>
+              <p class="snd_title">
                 Description
               </p>
               <hr style="width: 100%; border-top:1px solid rgba(0, 0, 0, .1);" />
