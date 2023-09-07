@@ -4,6 +4,30 @@
   </p>
   <div class="container">
     <div class="content">
+      <!-- Airflow ETL Project -->
+      <div class="item">
+        <figure class="img_area">
+          <a 
+            style="cursor:pointer;"
+            @click="openAirflow">
+            <img
+              class="img_img"
+              src="~assets/project/DE/airflow_project.png"
+              alt="project" />
+            <div class="text_box">
+              <a class="sub_text">
+                Airflow ETL Project
+              </a>
+              <hr style="width: 100%; border-top:1px solid rgba(255, 255, 255, .9);" />
+              <p style="color:#ffffff;">다양한 도시에 대한 온도, 인구 및 이민 통계와 함꼐 DA, DS, 다른 연구원들에게 제공할만한 ETL 파이프라인을 구축</p>
+            </div>
+          </a>
+          <Dairflow 
+            @click="closeAirflow"
+            v-if="d_airflow" />
+        </figure>
+      </div>
+
       <!-- RealClickstream analysis Project -->
       <div class="item">
         <figure class="img_area">
@@ -162,6 +186,7 @@ import Sparkupsplace from "../modal/BACK/startupsplace";
 import Donone from '../modal/DE/donone';
 import Sparkml from '../modal/DE/spark_ml';
 import DKafka from '../modal/DE/kafka';
+import Dairflow from '../modal/DE/airflow_project';
 
 export default {
   components: {
@@ -171,6 +196,7 @@ export default {
     Donone,
     Sparkml,
     DKafka,
+    Dairflow,
   },
   data() {
     return {
@@ -180,6 +206,7 @@ export default {
       d_donone: false,
       d_sparkml: false,
       d_kafka: false,
+      d_airflow: false,
     }
   },
   methods: {
@@ -218,6 +245,12 @@ export default {
     },
     closeKafka() {
       this.d_kafka = false;
+    },
+    openAirflow() {
+      this.d_airflow = true;
+    },
+    closeAirflow() {
+      this.d_airflow = false;
     },
     }
 }
