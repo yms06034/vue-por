@@ -26,10 +26,10 @@
                 Description
               </p>
               <hr style="width: 100%; border-top:1px solid rgba(0, 0, 0, .1);" />
-              <p>이번 프로젝트의 목적은 다양한 도시에 대한 온도, 인구 및 이민 통계와 함꼐 DA, DS, 다른 연구원들에게 제공할만한 ETL 파이프라인을 구축하는 것입니다.</p>
+              <p>이번 프로젝트의 목적은 다양한 도시에 대한 온도, 인구 및 이민 통계와 함께 DA, DS, 다른 연구원들에게 제공할만한 ETL 파이프라인을 구축하는 것입니다.</p>
               <br />
               <p>먼저 여러 데이터 셋에서 온도, 공항, 인구 및 이민 통계 데이터를 추출하고 spark를 활용하여 json으로 변환을 하여 Redshift DB에 적제합니다.</p>
-              <p>그 이후 Apache Airflow를 활용하여 json file을 s3로 마이그레이션된 데이토가 Redshift로 업로드 되고, 추가 변환을 거쳐 정규화 및 dimension 테이블로 로드 됩니다.</p>
+              <p>그 이후 Apache Airflow를 활용하여 json file을 s3로 마이그레이션된 데이터가 Redshift로 업로드 되고, 추가 변환을 거쳐 정규화 및 dimension 테이블로 로드 됩니다.</p>
               <br />
               <p class="snd_title">
                 Service INFO
