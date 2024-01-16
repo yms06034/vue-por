@@ -2,7 +2,7 @@
   <footer>
     <div class="footer">
       <p class="text">
-        Made By © SungJIn {{ new Date().getFullYear() }}
+        Made By © KimSungJIn {{ new Date().getFullYear() }}
       </p>
       <div class="contact_area">
         <a
@@ -38,9 +38,9 @@
             alt="youtube" />
         </a>
         <a
-          target="_blank"
           class="img_a"
-          href="mailto:yms06034@gmail.com">
+          href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=yms06034@gmail.com" 
+          target="_blank">
           <img
             src="~assets/mail_w.png"
             alt="mail" />

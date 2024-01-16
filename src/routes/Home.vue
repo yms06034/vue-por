@@ -149,7 +149,9 @@
             </a>
           </li>
           <li class="img_li">
-            <a href="mailto:yms06034@gmail.com">
+            <a 
+              href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=yms06034@gmail.com" 
+              target="_blank">
               <img
                 class="img"
                 src="~assets/mail.png"
@@ -235,7 +237,8 @@
               href="https://www.youtube.com/playlist?list=PLMEcO50qH7UziRtCK8Ocp41_B-qwtFVgg">YOUTUBE</a>
             <a
               class="bbtn"
-              href="mailto:yms06034@gmail.com">MAIL</a>
+              href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=yms06034@gmail.com" 
+              target="_blank">MAIL</a>
           </div>
         </div>
       </div>
@@ -386,7 +389,8 @@
             email at   
             <a
               class="mail"
-              href="mailto:yms06034@gmail.com">
+              href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=yms06034@gmail.com" 
+              target="_blank">
               yms06034@gmail.com.
             </a>
           </p>
@@ -408,7 +412,8 @@
             href="https://www.youtube.com/playlist?list=PLMEcO50qH7UziRtCK8Ocp41_B-qwtFVgg">YOUTUBE</a>
           <a
             class="bbtn"
-            href="mailto:yms06034@gmail.com">MAIL</a>
+            href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=yms06034@gmail.com" 
+            target="_blank">MAIL</a>
         </div>
       </div>
     </div>

@@ -47,6 +47,7 @@
               <div class="content">
                 <p>Django</p>
                 <p>Flask</p>
+                <p>Fast Api</p>
                 <p>Heroku</p>
                 <p>AWS</p>
               </div>
