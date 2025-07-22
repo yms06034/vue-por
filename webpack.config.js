@@ -47,8 +47,8 @@ module.exports = {
         ]
       },
       {
-        test: /\.(png|jpe?g|gif|webp)$/,
-        use: 'file-loader'
+        test: /\.(png|jpe?g|gif|webp|svg)$/,
+        type: 'asset/resource'
       }
     ]
   },
@@ -65,7 +65,6 @@ module.exports = {
     new VueLoaderPlugin()
   ],
 
-  // 개발 서버 옵션
   devServer: {
     host: 'localhost',
     port: 5123,

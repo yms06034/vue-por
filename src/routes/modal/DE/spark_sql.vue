@@ -3,11 +3,15 @@
     name="modal"
     appear>
     <div
-      class="modalto modal-overlay"
-      @click.self="$emit('close')">
+      class="modalto modal-overlay">
       <div class="modal_window">
         <div class="modal_content">
           <div class="page-title">
+            <button
+              class="close-x-btn"
+              @click="$emit('close')">
+              ×
+            </button>
             <p class="title">
               SPARK SQL PROJECT
             </p>
@@ -128,6 +132,7 @@ $font : 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
       background-color: rgb(255, 255, 255);
       padding: 0 60px;
       .page-title {
+        position: relative;
         top: 0px;
         left: 0px;
         width: 100%;
@@ -167,6 +172,21 @@ $font : 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
             transition: all .2s;
             background: $primary;
             color: #fff;
+          }
+        }
+        .close-x-btn {
+          position: absolute;
+          top: 0px;
+          right: 1px;
+          width: 30px;
+          height: 30px;
+          border: none;
+          background: none;
+          font-size: 50px;
+          cursor: pointer;
+          color: #666;
+          &:hover {
+            color: #000;
           }
         }
       }

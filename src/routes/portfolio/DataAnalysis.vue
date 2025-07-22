@@ -4,127 +4,30 @@
   </p>
   <div class="container">
     <div class="content">
-      <!-- Yelp Review Recommendation -->
-      <div class="item">
+      <div 
+        v-for="project in daProjects" 
+        :key="project.id"
+        class="item">
         <figure class="img_area">
           <a 
             style="cursor:pointer;"
-            @click="openYelp">
+            @click="openModal(project.id)">
             <img
               class="img_img"
-              src="~assets/project/DA/yelp_review.png"
+              :src="require(`~/assets/${project.image}`)"
               alt="project" />
             <div class="text_box">
               <a class="sub_text">
-                Yelp Review Recommendation
+                {{ project.title }}
               </a>
               <hr style="width: 100%; border-top:1px solid rgba(255, 255, 255, .9);" />
-              <p style="color:#ffffff;">Yelp의 Review Data를 활용해 각 식당의들은 개선방안을 추천해주는 분석입니다.</p>
+              <p style="color:#ffffff;">{{ project.description }}</p>
             </div>
           </a>
-          <Yelp 
-            @click="closeYelp"
-            v-if="yelp" />
-        </figure>
-      </div>
-
-      <!-- ML XGBOOST Project -->
-      <div class="item">
-        <figure class="img_area">
-          <a 
-            style="cursor:pointer;"
-            @click="openDelivery">
-            <img
-              class="img_img"
-              src="~assets/project/DA/delivery_pred.png"
-              alt="project" />
-            <div class="text_box">
-              <a class="sub_text">
-                Delivery Predicting System
-              </a>
-              <hr style="width: 100%; border-top:1px solid rgba(255, 255, 255, .9);" />
-              <p style="color:#ffffff;">E-commerce 배송 Data를 활용한 정시 배송 예측 시스템 입니다.</p>
-            </div>
-          </a>
-          <Delivery 
-            @click="closeDelivery"
-            v-if="delivery" />
-        </figure>
-      </div>
-
-
-      <!-- Kobert Project -->
-      <div class="item">
-        <figure class="img_area">
-          <a 
-            style="cursor:pointer;"
-            @click="openKobert">
-            <img
-              class="img_img"
-              src="~assets/project/DA/kobert.png"
-              alt="project" />
-            <div class="text_box">
-              <a
-                class="sub_text">
-                NLP PROJECT (Deep learning)
-                <hr style="width: 100%; border-top:1px solid rgba(255, 255, 255, .9);" />
-                <p class="sub_title">Bert를 활용한 가사 감성 분석 &amp; 시각화</p>
-              </a>
-            </div>
-          </a>
-          <Kobert 
-            @click="closeKobert"
-            v-if="kobert" />
-        </figure>
-      </div>
-
-      <!-- ICU_with_HF -->
-      <div class="item">
-        <figure class="img_area">
-          <a 
-            style="cursor:pointer;"
-            @click="openIh">
-            <img
-              class="img_img"
-              src="~assets/project/DA/in_hospital.png"
-              alt="project" />
-            <div class="text_box">
-              <a
-                class="sub_text">
-                In Hospital Mortality Prediction
-                <hr style="width: 100%; border-top:1px solid rgba(255, 255, 255, .9);" />
-                <p class="sub_title">MIMIC-III 데이터를 사용해 중환자실에 입원한 심부전 환자들의 사망 여부 예측 프로젝트</p>
-              </a>
-            </div>
-          </a>
-          <Inhospotal 
-            @click="closeIh"
-            v-if="in_hospital" />
-        </figure>
-      </div>
-
-      <!-- VGame2_data_Analysis -->
-      <div class="item">
-        <figure class="img_area">
-          <a 
-            style="cursor:pointer;"
-            @click="openVgame">
-            <img
-              class="img_img"
-              src="~assets/project/DA/vgame.png"
-              alt="project" />
-            <div class="text_box">
-              <a
-                class="sub_text">
-                GAME DATA ANALYSIS
-                <hr style="width: 100%; border-top:1px solid rgba(255, 255, 255, .9);" />
-                <p class="sub_title">1970년 부터 2016년까지의 전 세계 게임 판매량 데이터를 분석</p>
-              </a>
-            </div>
-          </a>
-          <Vgame2 
-            @click="closeVgame"
-            v-if="vgame" />
+          <component 
+            :is="modalComponents[project.id]"
+            @close="closeModal(project.id)"
+            v-if="modalStates[project.id]" />
         </figure>
       </div>
     </div>
@@ -132,11 +35,14 @@
 </template>
 
 <script>
+import { getProjectsByCategory } from '../../data/projects';
+
+// DA 모달 컴포넌트 import
 import Kobert from "../modal/DA/kobert_class";
-import Vgame2 from '../modal/DA/vgame2';
-import Inhospotal from "../modal/DA/in_hospital"
+import Vgame2 from "../modal/DA/vgame2";
+import Inhospotal from "../modal/DA/in_hospital";
 import Delivery from '../modal/DA/delivery_pred';
-import Yelp from '../modal/DA/yelp_review'
+import Yelp from '../modal/DA/yelp_review';
 
 export default {
   components: {
@@ -147,45 +53,29 @@ export default {
     Yelp,
   },
   data() {
+    const daProjects = getProjectsByCategory('DA');
+    const modalStates = {};
+    const modalComponents = {};
+    
+    // 각 프로젝트에 대한 모달 상태와 컴포넌트 매핑 초기화
+    daProjects.forEach(project => {
+      modalStates[project.id] = false;
+      modalComponents[project.id] = project.modalComponent;
+    });
+    
     return {
-      kobert: false,
-      vgame: false,
-      in_hospital: false,
-      delivery: false,
-      yelp: false,
+      daProjects,
+      modalStates,
+      modalComponents
     }
   },
   methods: {
-    openKobert() {
-      this.kobert = true;
+    openModal(projectId) {
+      this.modalStates[projectId] = true;
     },
-    closeKobert() {
-      this.kobert = false;
-    },
-    openVgame() {
-      this.vgame = true;
-    },
-    closeVgame() {
-      this.vgame = false;
-    },
-    openIh() {
-      this.in_hospital = true;
-    },
-    closeIh() {
-      this.in_hospital = false;
-    },
-    openDelivery() {
-      this.delivery = true;
-    },
-    closeDelivery() {
-      this.delivery = false;
-    },
-    openYelp() {
-      this.yelp = true;
-    },
-    closeYelp() {
-      this.yelp = false;
-    },
+    closeModal(projectId) {
+      this.modalStates[projectId] = false;
+    }
   }
 }
 </script>

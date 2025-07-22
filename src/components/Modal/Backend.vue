@@ -3,12 +3,16 @@
     name="modal"
     appear>
     <div
-      class="modalto modal-overlay"
-      @click.self="$emit('close')">
+      class="modalto modal-overlay">
       <div class="modal_window">
         <div class="modal_content">
           <!-- <slot /> <= SignUP.vue에서 내용 불러올 때 사용 -->
           <div class="page-title">
+            <button
+              class="close-x-btn"
+              @click="$emit('close')">
+              ×
+            </button>
             <img
               class="back_img"
               src="../../assets/backend.png"
@@ -141,6 +145,22 @@ $font : 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
         align-items: center;
         flex-direction: column;
         justify-content: center;
+        position: relative;
+        .close-x-btn {
+          position: absolute;
+          top: 10px;
+          right: 10px;
+          width: 30px;
+          height: 30px;
+          border: none;
+          background: none;
+          font-size: 24px;
+          cursor: pointer;
+          color: #666;
+          &:hover {
+            color: #000;
+          }
+        }
         .back_img {
           width: 100px;
           height: auto;

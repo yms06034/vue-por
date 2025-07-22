@@ -3,8 +3,7 @@
     name="modal"
     appear>
     <div
-      class="modal modal-overlay"
-      @click.self="$emit('close')">
+      class="modal modal-overlay">
       <div class="modal-window">
         <div class="modal-content">
           <p>Vue.js Modal Window!</p>
