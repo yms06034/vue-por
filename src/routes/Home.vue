@@ -216,7 +216,7 @@
             Data가 우리에게 주는 힘은 대단하다고 생각합니다.
           </p>
           <p>
-            저는 Data를 보면 자연스럽게 호기심이 생기며 <strong>Data Engineer</strong>로 성장하기 위해 끊임없이 노력하고 있습니다.
+            저는 Data를 보면 자연스럽게 호기심이 생기며 <strong>Data Engineer & Backend</strong>로 성장하기 위해 끊임없이 노력하고 있습니다.
           </p>
           <div class="btn_area">
             <!-- <a

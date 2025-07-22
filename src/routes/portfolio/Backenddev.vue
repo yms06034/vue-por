@@ -40,12 +40,14 @@ import { getProjectsByCategory } from '../../data/projects';
 import DFirststep from "../modal/BACK/firststep";
 import Donone from '../modal/DE/donone';
 import Startupsplace from "../modal/BACK/startupsplace";
+import pyqt_project from "../modal/BACK/pyqt_project.vue"
 
 export default {
   components: {
     DFirststep,
     Donone,
     Startupsplace,
+    pyqt_project
   },
   data() {
     const backProjects = getProjectsByCategory('BACK');

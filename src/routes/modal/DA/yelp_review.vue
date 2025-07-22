@@ -22,7 +22,7 @@
               target="_blank"
               class="github_link" 
               href="https://github.com/yms06034/Restaurant-Review_Analysis/blob/master/Yelp_%EB%A6%AC%EB%B7%B0_%EB%B6%84%EC%84%9D.ipynb">
-              GIBHUB
+              GITHUB
             </a>
           </div>
           <div class="page_content">

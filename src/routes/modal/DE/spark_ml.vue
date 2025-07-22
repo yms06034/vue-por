@@ -22,7 +22,7 @@
               target="_blank"
               class="github_link" 
               href="https://github.com/yms06034/artist-recommendation-system-for-spark-mllib">
-              GIBHUB
+              GITHUB
             </a>
           </div>
           <div class="page_content">

@@ -1,5 +1,14 @@
 // 프로젝트 데이터 중앙 관리
 export const projects = [
+    {
+    id: 'pyqt_project',
+    category: 'BACK',
+    title: 'API Testing Automation Tool',
+    description: 'PyQt 기반 Postman 대체 API 자동화 테스트 도구',
+    image: 'project/BACK/QtAA.png',
+    modalComponent: 'pyqt_project',
+    modalPath: '../modal/BACK/pyqt_project'
+  },
   // Data Engineering Projects
   {
     id: 'airflow',
@@ -112,15 +121,6 @@ export const projects = [
     image: 'project/BACK/firststep.png',
     modalComponent: 'DFirststep',
     modalPath: '../modal/BACK/firststep'
-  },
-  {
-    id: 'donone_back',
-    category: 'BACK',
-    title: 'ETL PIPELINE PROJECT (AIRFLOW)',
-    description: '실제 쇼핑몰 데이터 Airflow를 활용해 Pipeline으로 처리한 프로젝트 입니다.',
-    image: 'project/DE/donone.png',
-    modalComponent: 'Donone',
-    modalPath: '../modal/DE/donone'
   },
   {
     id: 'startupsplace_back',

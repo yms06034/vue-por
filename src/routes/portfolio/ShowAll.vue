@@ -36,8 +36,8 @@
 
 <script>
 import { projects } from '../../data/projects';
+import pyqt_project from '../modal/BACK/pyqt_project.vue';
 
-import DFirststep from "../modal/BACK/firststep";
 import DSparkSQL from "../modal/DE/spark_sql";
 import Donone from '../modal/DE/donone';
 import Sparkml from '../modal/DE/spark_ml';
@@ -51,9 +51,12 @@ import Delivery from '../modal/DA/delivery_pred';
 import Yelp from '../modal/DA/yelp_review';
 
 import Startupsplace from "../modal/BACK/startupsplace";
+import DFirststep from "../modal/BACK/firststep";
+
 
 export default {
   components: {
+    pyqt_project,
     DFirststep,
     DSparkSQL,
     Donone,

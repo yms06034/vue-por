@@ -22,7 +22,7 @@
               target="_blank"
               class="github_link" 
               href="https://github.com/yms06034/Airflow_ETL_project">
-              GIBHUB
+              GITHUB
             </a>
           </div>
           <div class="page_content">
