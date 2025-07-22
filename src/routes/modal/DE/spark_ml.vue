@@ -19,6 +19,7 @@
               artist recommendation system for spark mllib 
             </p>
             <a
+              target="_blank"
               class="github_link" 
               href="https://github.com/yms06034/artist-recommendation-system-for-spark-mllib">
               GIBHUB
@@ -33,6 +34,7 @@
               <p>본 프로젝트는 Spark Mllib를 활용해 Music Artist Recommendation System을 구축 하였습니다.</p>
               <p>
                 프로젝트의 자세한 내용은 제 <a
+                  target="_blank"
                   class="link"
                   href="https://github.com/yms06034/artist-recommendation-system-for-spark-mllib/blob/master/Spark_ML_by%20ALS.zpln">Repositories</a>에서 확인 할 수 있습니다.
               </p>
@@ -71,6 +73,7 @@
               <hr style="width: 100%; border-top:1px solid rgba(0, 0, 0, .1);" />
               <p>
                 The source code of the project are of course on <a
+                  target="_blank"
                   class="link"
                   href="https://github.com/yms06034/artist-recommendation-system-for-spark-mllib">Github.</a>
               </p>

@@ -19,6 +19,7 @@
               노래 가사 텍스트의 감성분석에 기반 한 음악 시각화 웹 개발 프로젝트 입니다.
             </p>
             <a
+              target="_blank"
               class="github_link" 
               href="https://github.com/yms06034/kobert_class">
               GIBHUB
@@ -31,7 +32,7 @@
               </p>
               <hr style="width: 100%; border-top:1px solid rgba(0, 0, 0, .1);" />
               <p style="margin-bottom: 40px;">
-                <a href="https://www.youtube.com/watch?v=K3b5ykx6h9E&list=PLMEcO50qH7UziRtCK8Ocp41_B-qwtFVgg&index=3&t=26s">
+                <a target="_blank" href="https://www.youtube.com/watch?v=K3b5ykx6h9E&list=PLMEcO50qH7UziRtCK8Ocp41_B-qwtFVgg&index=3&t=26s">
                   프로젝트 유튜브 영상 링크 (클릭)<br />
                   https://www.youtube.com/watch?v=K3b5ykx6h9E&list=PLMEcO50qH7UziRtCK8Ocp41_B-qwtFVgg&index=3&t=26s
                 </a>
@@ -44,6 +45,7 @@
               <p>
                 NLP 관련 프로젝트를 찾고 있을 때 김혜란 박사님의 
                 <a
+                  target="_blank"
                   class="link"
                   href="https://koreascience.kr/article/JAKO202031458603832.pdf">논문</a>을 보고 진행하게 되었다. 논문을 보면 이러한 연구를 한 계기를 `감정표현에 어려움을 겪는 발달 장애인들의 창작활동과 심리분석 및 의사소통을 쉽게 해주는 예술창작 및 교육 플랫폼으로 확장되기를 기대한다.`라고 적혀 있다.
               </p>
@@ -55,6 +57,7 @@
               <p>사용자가 원하는 노래 제목을 적으면 가사를 크롤링 해온 후 Bert에 학습 시켜 6 Class로 나눠진 감정으로 색상별로 보여준다.</p>
               <p>
                 Bert에 대한 Code는 <a
+                  target="_blank"
                   class="link"
                   href="https://github.com/yms06034/kobert_class/tree/master/kobert/models">여기 클릭</a>를 해서 보실 수 있습니다.
               </p>
@@ -74,9 +77,11 @@
               <p>
                 You can read the scientific paper on 
                 <a
+                  target="_blank"
                   class="link"
                   href="https://koreascience.kr/article/JAKO202031458603832.pdf">Music Visualization.</a> 
                 The source code of the project are of course on <a
+                  target="_blank"
                   class="link"
                   href="https://github.com/yms06034/kobert_class">Github.</a>
               </p>

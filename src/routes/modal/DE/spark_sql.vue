@@ -19,6 +19,7 @@
               Spark Sql를 활용한 Data Analysis &amp; DB 
             </p>
             <a
+              target="_blank"
               class="github_link" 
               href="https://github.com/yms06034/Spark_SQL">
               GIBHUB
@@ -33,6 +34,7 @@
               <p>본 프로젝트는 Spark SQL를 활용해 Data Analysis &amp; Data Wrangling를 진행한 후 DA가 사용할 수 있도록 Data Warehouse에 저장해 주었다.</p>
               <p>
                 프로젝트의 자세한 코드 및 내용은 제 <a
+                  target="_blank"
                   class="link"
                   href="https://github.com/yms06034/Spark_SQL">Repositories</a>에서 확인 할 수 있습니다.
               </p>
@@ -59,6 +61,7 @@
               <hr style="width: 100%; border-top:1px solid rgba(0, 0, 0, .1);" />
               <p>
                 The source code of the project are of course on <a
+                  target="_blank"
                   class="link"
                   href="https://github.com/yms06034/Spark_SQL">Github.</a>
               </p>

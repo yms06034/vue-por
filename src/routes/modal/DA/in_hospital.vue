@@ -19,6 +19,7 @@
               machine learning-based, retrospective analysis of the MIMIC-III database
             </p>
             <a
+              target="_blank"
               class="github_link" 
               href="https://github.com/yms06034/ML_PROJECT_IHM">
               GIBHUB
@@ -40,6 +41,7 @@
                 alt="kobert" />
               <p>
                 분석 및 예측에 대한 결과는 제 <a
+                  target="_blank"
                   class="link"
                   href="https://github.com/yms06034/ML_PROJECT_IHM">Repositories</a>에서 확인 할 수 있습니다.
               </p>
@@ -57,7 +59,8 @@
               </p>
               <hr style="width: 100%; border-top:1px solid rgba(0, 0, 0, .1);" />
               <p>
-                The source code of the project are of course on <a
+                The source code of the project are of course on <a 
+                  target="_blank"
                   class="link"
                   href="https://github.com/yms06034/ML_PROJECT_IHM">Github.</a>
               </p>

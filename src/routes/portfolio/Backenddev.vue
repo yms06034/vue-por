@@ -37,7 +37,6 @@
 <script>
 import { getProjectsByCategory } from '../../data/projects';
 
-// BACK 모달 컴포넌트 import
 import DFirststep from "../modal/BACK/firststep";
 import Donone from '../modal/DE/donone';
 import Startupsplace from "../modal/BACK/startupsplace";
@@ -53,7 +52,6 @@ export default {
     const modalStates = {};
     const modalComponents = {};
     
-    // 각 프로젝트에 대한 모달 상태와 컴포넌트 매핑 초기화
     backProjects.forEach(project => {
       modalStates[project.id] = false;
       modalComponents[project.id] = project.modalComponent;

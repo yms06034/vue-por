@@ -20,6 +20,7 @@
             </p>
             <a
               class="github_link" 
+              target="_blank"
               href="https://github.com/yms06034/Delivery-Predicting-System">
               GIBHUB
             </a>
@@ -31,7 +32,7 @@
               </p>
               <hr style="width: 100%; border-top:1px solid rgba(0, 0, 0, .1);" />
               <p style="margin-bottom: 40px;">
-                <a href="https://www.youtube.com/watch?v=8cdfO1uUD2k&list=PLMEcO50qH7UziRtCK8Ocp41_B-qwtFVgg&index=1&t=245s">
+                <a target="_blank" href="https://www.youtube.com/watch?v=8cdfO1uUD2k&list=PLMEcO50qH7UziRtCK8Ocp41_B-qwtFVgg&index=1&t=245s">
                   프로젝트 유튜브 영상 링크 (클릭)<br />
                   https://www.youtube.com/watch?v=8cdfO1uUD2k&list=PLMEcO50qH7UziRtCK8Ocp41_B-qwtFVgg&index=1&t=245s
                 </a>
@@ -51,6 +52,7 @@
                 alt="img" />
               <p>
                 분석 및 예측에 대한 결과는 제 <a
+                  target="_blank"
                   class="link"
                   href="https://github.com/yms06034/Delivery-Predicting-System/blob/master/PROJECT_ML.ipynb">Repositories</a>에서 확인 할 수 있습니다.
               </p>
@@ -79,6 +81,7 @@
               <p>
                 The source code of the project are of course on <a
                   class="link"
+                  target="_blank"
                   href="https://github.com/yms06034/Delivery-Predicting-System">Github.</a>
               </p>
             </div>

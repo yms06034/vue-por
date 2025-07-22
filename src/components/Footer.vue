@@ -6,9 +6,9 @@
       </p>
       <div class="contact_area">
         <a
-          target="_blank"
           class="img_a"
-          href="https://github.com/yms06034">
+          href="https://github.com/yms06034"
+          target="_blank">
           <img
             src="~assets/github_w.png"
             alt="github" />
@@ -22,17 +22,17 @@
             alt="linkedin" />
         </a> -->
         <a
-          target="_blank"
           class="img_a"
-          href="https://balang.tistory.com/">
+          href="https://balang.tistory.com/"
+          target="_blank">
           <img
             src="~assets/blog_w.png"
             alt="blog" />
         </a>
         <a
-          target="_blank"
-          class="img_a"
-          href="https://www.youtube.com/playlist?list=PLMEcO50qH7UziRtCK8Ocp41_B-qwtFVgg">
+        class="img_a"
+        href="https://www.youtube.com/playlist?list=PLMEcO50qH7UziRtCK8Ocp41_B-qwtFVgg"
+        target="_blank">
           <img
             src="~assets/youtube_w.png"
             alt="youtube" />

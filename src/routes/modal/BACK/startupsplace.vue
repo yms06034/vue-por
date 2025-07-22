@@ -19,6 +19,7 @@
               키워드 하나로 찾는 신규 창업자를 위한 창업 관련 DATA &amp; DashBorad 개발
             </p>
             <a
+              target="_blank"
               class="github_link" 
               href="https://github.com/yms06034/StartupsPlace">
               GIBHUB
@@ -47,6 +48,7 @@
               <p>
                 위 페이지의 자세한 코드는 <a
                   class="link"
+                  target="_blank"
                   href="https://github.com/yms06034/StartupsPlace/blob/master/startupsplace/routes/chart_route.py">여기</a>에서 확인 가능합니다.
               </p>
               <strong><li>키워드에 따른 창업정보 페이지</li></strong>
@@ -58,6 +60,7 @@
               <p>
                 위 페이지의 자세한 코드는 <a
                   class="link"
+                  target="_blank"
                   href="https://github.com/yms06034/StartupsPlace/blob/master/startupsplace/routes/query_route.py">여기</a>에서 확인 가능합니다.
               </p>
               <br /><br />
@@ -78,6 +81,7 @@
               <p>
                 The source code of the project are of course on <a
                   class="link"
+                  target="_blank"
                   href="https://github.com/yms06034/StartupsPlace">Github.</a>
               </p>
             </div>

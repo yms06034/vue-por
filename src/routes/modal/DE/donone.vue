@@ -19,6 +19,7 @@
               실제 쇼핑몰 데이터 Airflow를 활용해 Pipeline으로 처리한 프로젝트
             </p>
             <a
+              target="_blank"
               class="github_link" 
               href="https://github.com/yms06034/Donone_PROJECT">
               GIBHUB
@@ -88,6 +89,7 @@
               <hr style="width: 100%; border-top:1px solid rgba(0, 0, 0, .1);" />
               <p>
                 The source code of the project are of course on <a
+                  target="_blank"
                   class="link"
                   href="https://github.com/yms06034/Donone_PROJECT">Github.</a>
               </p>

@@ -19,6 +19,7 @@
               JAVA를 사용해 Log Data를 만들어 실시간 클릭 데이터를 대시보드로 넘기는 Pipeline 프로젝트
             </p>
             <a
+              target="_blank"
               class="github_link" 
               href="https://github.com/yms06034/clickstream-analytics">
               GIBHUB
@@ -65,6 +66,7 @@
               <hr style="width: 100%; border-top:1px solid rgba(0, 0, 0, .1);" />
               <p>
                 The source code of the project are of course on <a
+                  target="_blank"
                   class="link"
                   href="https://github.com/yms06034/clickstream-analytics">Github.</a>
               </p>

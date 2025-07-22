@@ -37,7 +37,6 @@
 <script>
 import { getProjectsByCategory } from '../../data/projects';
 
-// DA 모달 컴포넌트 import
 import Kobert from "../modal/DA/kobert_class";
 import Vgame2 from "../modal/DA/vgame2";
 import Inhospotal from "../modal/DA/in_hospital";
@@ -57,7 +56,6 @@ export default {
     const modalStates = {};
     const modalComponents = {};
     
-    // 각 프로젝트에 대한 모달 상태와 컴포넌트 매핑 초기화
     daProjects.forEach(project => {
       modalStates[project.id] = false;
       modalComponents[project.id] = project.modalComponent;

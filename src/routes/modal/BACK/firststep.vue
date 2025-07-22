@@ -19,6 +19,7 @@
               Find what you are looking for travel place
             </p>
             <a
+              target="_blank"
               class="github_link" 
               href="https://github.com/yms06034/flask_firststep-ML-">
               GIBHUB
@@ -31,7 +32,7 @@
               </p>
               <hr style="width: 100%; border-top:1px solid rgba(0, 0, 0, .1);" />
               <p style="margin-bottom: 40px;">
-                <a href="https://www.youtube.com/watch?v=KWHPCwcAzQo&list=PLMEcO50qH7UziRtCK8Ocp41_B-qwtFVgg&index=2">
+                <a target="_blank" href="https://www.youtube.com/watch?v=KWHPCwcAzQo&list=PLMEcO50qH7UziRtCK8Ocp41_B-qwtFVgg&index=2">
                   프로젝트 유튜브 영상 링크 (클릭)<br />
                   https://www.youtube.com/watch?v=KWHPCwcAzQo&list=PLMEcO50qH7UziRtCK8Ocp41_B-qwtFVgg&index=2
                 </a>
@@ -73,6 +74,7 @@
               <p>
                 The source code of the project are of course on <a
                   class="link"
+                  target="_blank"
                   href="https://github.com/yms06034/flask_firststep-ML-">Github.</a>
               </p>
             </div>

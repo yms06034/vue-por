@@ -19,6 +19,7 @@
               Yelp의 Review Data를 활용해 각 식당의들은 개선방안을 추천해주는 분석입니다.
             </p>
             <a
+              target="_blank"
               class="github_link" 
               href="https://github.com/yms06034/Restaurant-Review_Analysis/blob/master/Yelp_%EB%A6%AC%EB%B7%B0_%EB%B6%84%EC%84%9D.ipynb">
               GIBHUB
@@ -40,6 +41,7 @@
                 alt="img" />
               <p>
                 분석 및 예측에 대한 결과는 제 <a
+                  target="_blank"
                   class="link"
                   href="https://github.com/yms06034/Restaurant-Review_Analysis/blob/master/Yelp_%EB%A6%AC%EB%B7%B0_%EB%B6%84%EC%84%9D.ipynb">Repositories</a>에서 확인 할 수 있습니다.
               </p>
@@ -79,6 +81,7 @@
               <hr style="width: 100%; border-top:1px solid rgba(0, 0, 0, .1);" />
               <p>
                 The source code of the project are of course on <a
+                  target="_blank"
                   class="link"
                   href="https://github.com/yms06034/Restaurant-Review_Analysis/blob/master/Yelp_%EB%A6%AC%EB%B7%B0_%EB%B6%84%EC%84%9D.ipynb">Github.</a>
               </p>

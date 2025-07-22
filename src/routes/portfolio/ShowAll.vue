@@ -37,8 +37,6 @@
 <script>
 import { projects } from '../../data/projects';
 
-// 모든 모달 컴포넌트 import
-// DE
 import DFirststep from "../modal/BACK/firststep";
 import DSparkSQL from "../modal/DE/spark_sql";
 import Donone from '../modal/DE/donone';
@@ -46,14 +44,12 @@ import Sparkml from '../modal/DE/spark_ml';
 import DKafka from '../modal/DE/kafka';
 import Dairflow from '../modal/DE/airflow_project';
 
-// DA
 import Kobert from "../modal/DA/kobert_class";
 import Vgame2 from "../modal/DA/vgame2";
 import Inhospotal from "../modal/DA/in_hospital";
 import Delivery from '../modal/DA/delivery_pred';
 import Yelp from '../modal/DA/yelp_review';
 
-// BACK
 import Startupsplace from "../modal/BACK/startupsplace";
 
 export default {

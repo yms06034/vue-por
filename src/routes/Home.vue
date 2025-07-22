@@ -406,9 +406,11 @@
             href="https://github.com/yms06034">GITHUB</a>
           <a
             class="bbtn"
+            target="_blank"
             href="https://balang.tistory.com/">BLOG</a>
           <a
             class="bbtn"
+            target="_blank"
             href="https://www.youtube.com/playlist?list=PLMEcO50qH7UziRtCK8Ocp41_B-qwtFVgg">YOUTUBE</a>
           <a
             class="bbtn"

@@ -19,6 +19,7 @@
               2016년까지의 게임 판매량 데이터를 분석한 프로젝트 입니다.
             </p>
             <a
+              target="_blank"
               class="github_link" 
               href="https://github.com/yms06034/vgames2_data">
               GIBHUB
@@ -40,6 +41,7 @@
               - 4. ...
               <p>
                 에 대한 분석을 진행하였습니다. 구체적인 과정은 <a
+                  target="_blank"
                   class="link"
                   href="https://github.com/yms06034/vgames2_data/blob/master/vgames2_data.ipynb">vgames2_data</a>에 있습니다.
               </p>
@@ -56,6 +58,7 @@
               <hr style="width: 100%; border-top:1px solid rgba(0, 0, 0, .1);" />
               <p>
                 The source code of the project are of course on <a
+                  target="_blank"
                   class="link"
                   href="https://github.com/yms06034/vgames2_data">Github.</a>
               </p>

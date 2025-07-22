@@ -19,6 +19,7 @@
               다양한 도시에 대한 온도, 인구 및 이민 통계와 함꼐 DA, DS, 다른 연구원들에게 제공할만한 ETL 파이프라인을 구축
             </p>
             <a
+              target="_blank"
               class="github_link" 
               href="https://github.com/yms06034/Airflow_ETL_project">
               GIBHUB
@@ -82,6 +83,7 @@
               <hr style="width: 100%; border-top:1px solid rgba(0, 0, 0, .1);" />
               <p>
                 The source code of the project are of course on <a
+                  target="_blank"
                   class="link"
                   href="https://github.com/yms06034/Airflow_ETL_project">Github.</a>
               </p>
