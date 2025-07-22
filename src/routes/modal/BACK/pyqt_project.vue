@@ -21,7 +21,7 @@
             <a
               target="_blank"
               class="github_link" 
-              href="https://github.com/yms06034/QtAA---API-Testing-Automation-Tool/tree/master">
+              href="https://github.com/yms06034/API-Testing-Automation-Tool">
               GITHUB
             </a>
           </div>
@@ -116,7 +116,7 @@
                  본 프로젝트는 회사 내부 규정에 따라 소스 코드는 공개할 수 없으며, <a
                   target="_blank"
                   class="link"
-                  href="https://github.com/yms06034/QtAA---API-Testing-Automation-Tool/tree/master">Github.</a>에는 상세한 프로젝트 문서만 포함되어 있습니다.
+                  href="https://github.com/yms06034/API-Testing-Automation-Tool">Github.</a>에는 상세한 프로젝트 문서만 포함되어 있습니다.
               </p>
             </div>
           </div>
