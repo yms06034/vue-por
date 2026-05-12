@@ -138,7 +138,7 @@
                 alt="blog" />
             </a>
           </li>
-          <li class="img_li">
+          <!-- <li class="img_li">
             <a
               target="_blank" 
               href="https://www.youtube.com/playlist?list=PLMEcO50qH7UziRtCK8Ocp41_B-qwtFVgg">
@@ -147,7 +147,7 @@
                 src="~assets/youtube.png"
                 alt="youtube" />
             </a>
-          </li>
+          </li> -->
           <li class="img_li">
             <a 
               href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=yms06034@gmail.com" 
@@ -208,15 +208,17 @@
             alt="profile" />
         </div>
         <div class="text_area">
-          <p>안녕하세요, 저는 연주하는 개발자 김성진입니다.</p> 
+          <p>안녕하세요, 저는 연주하는 개발자 김성진입니다.</p>
           <p>
-            Data Analytics를 시작으로 Data에 관해 입문하였습니다.
-            <br />현재는 Data로 인해 굉장히 빠른 변화를 하고 있습니다. 
-            <br />이제는 <strong>네트워크 전</strong>이라는 말이 있듯이
-            Data가 우리에게 주는 힘은 대단하다고 생각합니다.
+            Data Analytics를 처음 접했을 때,
+            <br />숫자 뒤에 숨은 이야기가 보이기 시작했습니다.
+            <br />그 순간부터 데이터는 제게 가장 흥미로운 언어가 됐고,
+            <br />이제는 그 데이터를 직접 다루고 흐르게 하는
+            <strong>Data Engineer & Backend</strong> 개발자를 꿈꾸고 있습니다.
           </p>
           <p>
-            저는 Data를 보면 자연스럽게 호기심이 생기며 <strong>Data Engineer & Backend</strong>로 성장하기 위해 끊임없이 노력하고 있습니다.
+            어제보다 오늘, 오늘보다 내일
+            <br />더 나은 개발자가 되기 위해 계속 만들고 계속 배웁니다.
           </p>
           <div class="btn_area">
             <!-- <a
@@ -231,10 +233,10 @@
               class="bbtn"
               target="_blank"
               href="https://balang.tistory.com/">BLOG</a>
-            <a
+            <!-- <a
               class="bbtn"
               target="_blank"
-              href="https://www.youtube.com/playlist?list=PLMEcO50qH7UziRtCK8Ocp41_B-qwtFVgg">YOUTUBE</a>
+              href="https://www.youtube.com/playlist?list=PLMEcO50qH7UziRtCK8Ocp41_B-qwtFVgg">YOUTUBE</a> -->
             <a
               class="bbtn"
               href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=yms06034@gmail.com" 
@@ -379,10 +381,16 @@
           CONTACT
         </div>
         <div class="summary">
-          "우리는 모두 이 사실을 알고 있다.
-          계속 노력하면 성공할 수 있다는 걸 그 속도가 느릴지언정 <strong style="color:#f02525;">'절대'</strong> 포기하지 말라, 목표는 보이는 것보다 가까이 있을 때가 있다.”
+          <div class="quote_block">
+            <p class="quote_text">
+              계속 노력하면 결국 이루어진다.
+              <br />속도가 느릴지언정 <strong>절대</strong> 포기하지 말라.
+              <br />목표는 보이는 것보다 가까운 곳에 있다.
+            </p>
+          </div>
           <p class="sub_text">
-            항상 이런 마음가짐으로 모든일에 최선을 다하고 있습니다.
+            이 한 줄을 마음에 새기고,
+            <br />항상 최선을 다하고 있습니다.
           </p>
           <p class="sub_mail">
             email at   
@@ -407,10 +415,10 @@
             class="bbtn"
             target="_blank"
             href="https://balang.tistory.com/">BLOG</a>
-          <a
+          <!-- <a
             class="bbtn"
             target="_blank"
-            href="https://www.youtube.com/playlist?list=PLMEcO50qH7UziRtCK8Ocp41_B-qwtFVgg">YOUTUBE</a>
+            href="https://www.youtube.com/playlist?list=PLMEcO50qH7UziRtCK8Ocp41_B-qwtFVgg">YOUTUBE</a> -->
           <a
             class="bbtn"
             href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=yms06034@gmail.com" 
@@ -1001,6 +1009,44 @@ header {
         font-family: $font;
         max-width: 800px;
         padding: 0 70px;
+        .quote_block {
+          position: relative;
+          max-width: 600px;
+          margin: 0 auto 30px;
+          padding: 35px 40px 30px 55px;
+          background: #f8f9fa;
+          border-left: 4px solid $primary;
+          border-radius: 4px;
+          text-align: left;
+          @media screen and (max-width: 600px) {
+            padding: 30px 25px 25px 45px;
+          }
+          &::before {
+            content: '\201C';
+            position: absolute;
+            top: 5px;
+            left: 18px;
+            font-size: 70px;
+            color: $primary;
+            font-family: Georgia, serif;
+            line-height: 1;
+          }
+          .quote_text {
+            font-size: 18px;
+            line-height: 1.9;
+            color: #2c3e50;
+            font-weight: 400;
+            margin: 0;
+            @media screen and (max-width: 600px) {
+              font-size: 16px;
+              line-height: 1.8;
+            }
+            strong {
+              color: #f02525;
+              font-weight: 700;
+            }
+          }
+        }
         .sub_text {
           margin-top: 10px;
         }
