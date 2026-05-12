@@ -268,12 +268,11 @@
           <p class="title">
             Data Engineer
           </p>
-          <p>
-            collecting, managing, and converting 
-            raw data into information that  
-            can be interpreted by data scientists and 
-            business analysts.
-          </p>
+          <!-- <p>
+            원시 데이터를 수집·관리·가공하여
+            <br />데이터 사이언티스트와 분석가가
+            <br />활용할 수 있는 정보로 만듭니다.
+          </p> -->
           <a
             @click="ddopenModal" 
             class="modal_data">
@@ -283,7 +282,7 @@
             @close="ddcloseModal"
             v-if="data_modal" />
         </div>
-        <div class="tents_p">
+        <div class="tents_p" style="margin-left: 30px;">
           <img
             class="tents_img"
             src="~assets/backend.png"
@@ -291,11 +290,11 @@
           <p class="title">
             BackEnd Developer
           </p>
-          <p>
-            allows a database and
-            an application to communicate with
-            writing APIs, creating libraries, and working with system components
-          </p>
+          <!-- <p>
+            API와 라이브러리를 설계하고
+            <br />데이터베이스와 애플리케이션을
+            <br />연결하는 서버 시스템을 만듭니다.
+          </p> -->
           <a 
             class="modal_data"
             id="data_show-modal"
@@ -896,11 +895,14 @@ header {
         flex-direction: column;
         align-items: center;
         max-width: 28%;
-        margin-right: 20px;
+        // margin-right: 20px;
         @media screen and (max-width: 600px) {
           max-width: 50%;
           margin-right: 0;
           margin-bottom: 70px;
+        }
+        .l-m {
+          margin-left: 30px;
         }
         .tents_img {
           width: 110px;

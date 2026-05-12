@@ -29,10 +29,11 @@
               </p>
               <div class="content">
                 <p>Python</p>
-                <p>javascript</p>
+                <p>Java</p>
+                <p>JavaScript</p>
               </div>
             </div>
-            <div class="text_area">
+            <!-- <div class="text_area">
               <p class="title">
                 FrontEnd Development
               </p>
@@ -43,17 +44,15 @@
                 <p>BOOTSTRAP</p>
                 <p>VUE.JS</p>
               </div>
-            </div>
+            </div> -->
             <div class="text_area">
               <p class="title">
                 Backend Development
               </p>
               <div class="content">
                 <p>Django</p>
-                <p>Flask</p>
-                <p>Fast Api</p>
-                <p>Heroku</p>
-                <p>AWS</p>
+                <p>FastAPI</p>
+                <p>Node.js</p>
               </div>
             </div>
             <div class="text_area">
@@ -61,9 +60,19 @@
                 Database
               </p>
               <div class="content">
-                <p>mongoDB</p>
-                <p>MySql</p>
-                <p>Postgresql</p>
+                <p>Redis</p>
+                <p>MySQL</p>
+                <p>PostgreSQL</p>
+              </div>
+            </div>
+            <div class="text_area">
+              <p class="title">
+                Infra/배포
+              </p>
+              <div class="content">
+                <p>AWS</p>
+                <p>Docker</p>
+                <p>Nginx</p>
               </div>
             </div>
           </div>
@@ -84,22 +93,18 @@
 $primary: #69b3a2;
 $font : 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 
-/* width */
 ::-webkit-scrollbar {
   width: 5px;
 }
 
-/* Track */
 ::-webkit-scrollbar-track {
   background: #f1f1f1; 
 }
  
-/* Handle */
 ::-webkit-scrollbar-thumb {
   background: #69b3a2; 
 }
 
-/* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #5cb29e; 
 }

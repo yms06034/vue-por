@@ -18,7 +18,7 @@
               src="../../assets/data_engineer.png"
               alt="backendimg" />
             <p class="title">
-              Data Enigneer
+              Data Engineer
             </p>
           </div>
           <hr style="width: 50%; border-top:1px solid rgba(0, 0, 0, .2);" />
@@ -29,8 +29,10 @@
               </p>
               <div class="content">
                 <p>Python</p>
-                <p>Scala</p>
+                <p>SQL</p>
                 <p>Java</p>
+                <p>Bash/Shell</p>
+                <p>Scala</p>
               </div>
             </div>
             <div class="text_area">
@@ -38,12 +40,12 @@
                 Data engineer
               </p>
               <div class="content">
-                <p>AWS</p>
                 <p>Spark</p>
                 <p>Hadoop</p>
                 <p>Airflow</p>
                 <p>Flink</p>
-                <p>Selenium</p>
+                <p>Kafka</p>
+                <p>dbt</p>
               </div>
             </div>
             <div class="text_area">
@@ -51,10 +53,11 @@
                 Database
               </p>
               <div class="content">
-                <p>mongoDB</p>
+                <p>MongoDB</p>
                 <p>Cassandra</p>
-                <p>MySql</p>
-                <p>Postgresql</p>
+                <p>MySQL</p>
+                <p>PostgreSQL</p>
+                <p>Presto</p>
               </div>
             </div>
             <div class="text_area">
@@ -63,10 +66,9 @@
               </p>
               <div class="content">
                 <p>Docker</p>
-                <p>Docker Compose</p>
+                <p>Git</p>
                 <p>Linux</p>
-                <p>Zeppelin</p>
-                <p>jupyter notebook</p>
+                <p>Grafana</p>
               </div>
             </div>
           </div>
@@ -87,22 +89,18 @@
 $primary: #69b3a2;
 $font : 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 
-/* width */
 ::-webkit-scrollbar {
   width: 5px;
 }
 
-/* Track */
 ::-webkit-scrollbar-track {
   background: #f1f1f1; 
 }
 
-/* Handle */
 ::-webkit-scrollbar-thumb {
   background: #69b3a2; 
 }
 
-/* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #5cb29e; 
 }
