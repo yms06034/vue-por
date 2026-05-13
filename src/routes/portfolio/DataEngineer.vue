@@ -43,6 +43,7 @@ import Donone from '../modal/DE/donone';
 import Sparkml from '../modal/DE/spark_ml';
 import DKafka from '../modal/DE/kafka';
 import Dairflow from '../modal/DE/airflow_project';
+import EcommerceDemand from '../modal/DE/ecommerce_demand';
 import Startupsplace from "../modal/BACK/startupsplace";
 
 export default {
@@ -53,6 +54,7 @@ export default {
     Sparkml,
     DKafka,
     Dairflow,
+    EcommerceDemand,
     Startupsplace,
   },
   data() {

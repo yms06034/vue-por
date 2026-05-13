@@ -43,6 +43,7 @@ import Donone from '../modal/DE/donone';
 import Sparkml from '../modal/DE/spark_ml';
 import DKafka from '../modal/DE/kafka';
 import Dairflow from '../modal/DE/airflow_project';
+import EcommerceDemand from '../modal/DE/ecommerce_demand';
 
 import Kobert from "../modal/DA/kobert_class";
 import Vgame2 from "../modal/DA/vgame2";
@@ -56,6 +57,7 @@ import DFirststep from "../modal/BACK/firststep";
 
 export default {
   components: {
+    EcommerceDemand,
     pyqt_project,
     DFirststep,
     DSparkSQL,

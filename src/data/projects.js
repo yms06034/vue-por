@@ -1,6 +1,16 @@
 // 프로젝트 데이터 중앙 관리
 export const projects = [
-    {
+  // Data Engineering Projects
+  {
+    id: 'ecommerce_demand',
+    category: 'DE',
+    title: 'E-commerce Demand Data Pipeline',
+    description: 'Airflow + dbt 로 이커머스 수요 마트 구축, P1 개선으로 dbt test 50× 단축 (Olist 2M+ row 검증)',
+    image: 'project/DE/ecommerce_demand_pipeline.png',
+    modalComponent: 'EcommerceDemand',
+    modalPath: '../modal/DE/ecommerce_demand'
+  },
+  {
     id: 'pyqt_project',
     category: 'BACK',
     title: 'API Testing Automation Tool',
@@ -9,7 +19,6 @@ export const projects = [
     modalComponent: 'pyqt_project',
     modalPath: '../modal/BACK/pyqt_project'
   },
-  // Data Engineering Projects
   {
     id: 'airflow',
     category: 'DE',
